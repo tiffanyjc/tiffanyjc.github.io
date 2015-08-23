@@ -46,8 +46,8 @@ ul.posts li {
 
 img.mainimg {
 	position: absolute; 
-	max-width: 20%; 
-	max-height: 20%; 
+	max-width: 800px; 
+	max-height: 335px; 
 	top: 0; 
 	left:-10; 
 	right:0;
