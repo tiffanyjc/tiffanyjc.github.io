@@ -50,5 +50,7 @@ img.mainimg {
 	left:-10; 
 	right:0;
 	bottom:0;
+	max-width:800px; 
+	max-height: 335px;
 	margin:auto;
 }
