@@ -1,55 +1,25 @@
-body {
-    margin: 0px auto;
-    width: 100%;
-    background-color: #404040;
-    color: #fff;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+body
+{
+	font-family: sans-serif;
+	font-size: 100%;
+	margin: 10px;
+	color: #ddd;
+	background-color: #404040;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+a { color: #fff; }
 
-ul.posts li {
-    list-style: none;
-}
-
-img.mainimg {
+img.mainimg
+{
 	position: absolute;
-	top: 0; 
-	left:0; 
-	right:0;
-	bottom:0;
-	width:60%; 
-	margin:auto;
+	max-width: 80%;
+	max-height: 80%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
 }
+
