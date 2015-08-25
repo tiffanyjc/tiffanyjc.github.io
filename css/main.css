@@ -41,7 +41,7 @@ div.map > a:hover {
     background-color: rgba(255, 0, 0, .5);
 }
 
-div.map > a.a {
+div.map > a.about {
     top: 0;
     left: 0;
     width: 35%;
