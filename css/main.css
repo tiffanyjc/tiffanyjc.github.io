@@ -22,7 +22,6 @@ img.mainimg
 
 }
 
-
 div.map {
     position: relative;
 }
@@ -41,9 +40,38 @@ div.map > a:hover {
     background-color: rgba(255, 0, 0, .5);
 }
 
-div.map > a.about {
-    top: 0;
-    left: 0;
-    width: 35%;
-    height: 52.5%;
+div.map > a.a {
+    top: 60%;
+    left: 8%;
+    width: 13%;
+    height: 40%;
+}
+
+div.map > a.b {
+    top: 60%;
+    left: 23%;
+    width: 15%;
+    height: 40%;
+}
+
+div.map > a.c {
+    top: 60%;
+    left: 40%;
+    width: 14%;
+    height: 40%;
+}
+
+div.map > a.d {
+    top: 60%;
+    left: 57%;
+    width: 12%;
+    height: 40%;
+}
+
+
+div.map > a.e {
+    top: 60%;
+    left: 72%;
+    width: 15%;
+    height: 40%;
 }
