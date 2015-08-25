@@ -22,3 +22,28 @@ img.mainimg
 
 }
 
+
+div.map {
+    position: relative;
+}
+
+div.map > img {
+    display: block;
+    max-width: 100%;
+}
+
+div.map > a {
+    display: block;
+    position: absolute;
+}
+
+div.map > a:hover {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+div.map > a.a {
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 52.5%;
+}
