@@ -17,6 +17,14 @@ div.positioner {
   
 }
 
+div.positioner_nav {
+  position: absolute; 
+  top: 0%; 
+  left: 15%; 
+  max-width: 70%; 
+  
+}
+
 div.map {
 	position: relative;
   max-width: 50%;
