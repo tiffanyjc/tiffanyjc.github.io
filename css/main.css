@@ -42,13 +42,14 @@ div.map > a {
 div.map a p {
     visibility:hidden;
     text-align: center; 
-    opacity:1; 
+    opacity:0; 
     font-family: 'Josefin Sans', sans-serif;
     font-weight:700; 
 }
 
 div.map a:hover p {
     visibility: visible;
+    opacity:0; 
     height: 100%;
 }
 
