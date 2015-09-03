@@ -43,7 +43,7 @@ div.map a p {
     visibility:hidden;
     text-align: center; 
     opacity:0; 
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     font-weight:700; 
 }
 
@@ -60,8 +60,7 @@ div.map > a:hover {
     vertical-align: bottom;
     text-align: center;
     opacity:1;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight:700; 
+    font-family: 'Didact Gothic', sans-serif;
     text-decoration:none;
      }
 
