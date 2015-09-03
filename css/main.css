@@ -22,7 +22,7 @@ img.mainimg
 
 }
 
-div.filler {
+span.filler {
 	position: relative;
 	max-width:25%
 	max-height: 25%;
