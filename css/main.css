@@ -126,4 +126,18 @@ div.writ {
  border: 1px solid #404040;  
 }
 
+.writ_tit {
+ background-color: white; 
+ color: #404040; 
+ opacity: 0; 
+ height: 100%; 
+ width: 100%; 
+ visibility: hidden; 
+}
+
+div.writ:hover .writ_tit {
+ visibility: visible; 
+ opacity: .8; 
+}
+
 </style>
