@@ -1,13 +1,13 @@
 body
 {
-	font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 	font-size: 100%;
 	margin: 10px;
-	color: #ddd;
-	background-color: #404040;
+	color: #404040;
+	background-color: #fff;
 }
 
-a { color: #fff; }
+a { color: #404040; }
 
 div.positioner {
   position: absolute; 
@@ -22,7 +22,8 @@ div.positioner_nav {
   top: 0%; 
   left: 15%; 
   max-width: 70%; 
-  
+  border: 1px solid white;
+  text-align: center;
 }
 
 div.map {
@@ -63,7 +64,7 @@ div.map a:hover p {
 
 div.map > a:hover {
     background-color: none;
-    border-bottom: 6px solid white;
+    border-bottom: 6px solid #404040;
     display: table-cell;
     vertical-align: bottom;
     text-align: center;
@@ -82,20 +83,20 @@ div.map > a.a {
 div.map > a.b {
     top: 60%;
     left: 23%;
-    width: 15%;
+    width: 14%;
     height: 40%;
 }
 
 div.map > a.c {
     top: 60%;
-    left: 40%;
-    width: 14%;
+    left: 41%;
+    width: 15%;
     height: 40%;
 }
 
 div.map > a.d {
     top: 60%;
-    left: 57%;
+    left: 59%;
     width: 12%;
     height: 40%;
 }
@@ -103,7 +104,7 @@ div.map > a.d {
 
 div.map > a.e {
     top: 60%;
-    left: 72%;
+    left: 74%;
     width: 15%;
     height: 40%;
 }
