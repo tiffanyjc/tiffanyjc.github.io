@@ -111,8 +111,12 @@ div.map > a.e {
 div.content {
   position: relative;
   top:  100px; 
-  max-with: 100%; 
   font-family:'Didact Gothic'; 
 }
+
+div.content img {
+  display: block; 
+  border: 1px solid #404040; 
+}  
 
 </style>
