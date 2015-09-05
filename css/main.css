@@ -108,6 +108,42 @@ div.map > a.e {
     height: 40%;
 }
 
+div.map > a.an {
+    top: 30%;
+    left: 8%;
+    width: 13%;
+    height: 70%;
+}
+
+div.map > a.bn {
+    top: 30%;
+    left: 23%;
+    width: 14%;
+    height: 70%;
+}
+
+div.map > a.cn {
+    top: 30%;
+    left: 41%;
+    width: 15%;
+    height: 70%;
+}
+
+div.map > a.dn {
+    top: 30%;
+    left: 59%;
+    width: 12%;
+    height: 70%;
+}
+
+
+div.map > a.en {
+    top: 30%;
+    left: 74%;
+    width: 15%;
+    height: 70%;
+}
+
 div.content {
   position: relative;
   top:  100px; 
