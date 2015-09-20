@@ -3,9 +3,11 @@ body
 {
   font-family: 'Droid Sans', sans-serif;
 	font-size: 100%;
-	margin: 10px;
+	margin: 0px;
+    padding: 0px; 
 	color: #404040;
 	background-color: #fff;
+    left:0px; 
 }
 
 a { color: #404040; }
@@ -16,6 +18,18 @@ div.positioner {
   left: 15%; 
   max-width: 70%; 
   
+}
+
+div.project_container {
+    background: black; 
+    width:100%; 
+    height: 100px; 
+    position: relative; 
+    top: 200px;
+    border-left: 3px; 
+    margin: 0 auto; 
+    clear:both;
+    background-image: url('https://github.com/tiffanyjc/tiffanyjc.github.io/blob/master/images/project_codingcamp_noblur.png?raw=true'); 
 }
 
 div.positioner_nav {
@@ -186,3 +200,7 @@ div.writ:hover .writ_tit {
 div.writ:hover img {
 	opacity:.4; 
 }
+
+body {
+    margin: 0px; 
+    padding: 0px; }
