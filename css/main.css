@@ -136,5 +136,10 @@ h1 {
     line-height: 13px;
 }
 
+.contact-info a:link, .contact-info a:visited, .contact-info a:active {
+    color: #4D5373;    
+    
+}
+
 .contact-info p {
     color: gray; }
