@@ -112,10 +112,11 @@ h1 {
 .profile-pic {
     z-index:0; 
     margin-top: 130px; 
- width: 200px; 
-height: 200px; 
-border: 5px solid white; 
-    background-color: white; 
+    width: 200px; 
+    height: 200px; 
+    border: 5px solid white; 
+    background-image: url('https://www.dropbox.com/s/z8yhcz5wapv7mzr/tiffany-pumpkin.png?raw=true'); 
+    background-size:cover; 
     
 }
 
