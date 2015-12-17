@@ -2,7 +2,6 @@
 /*## Body Formatting ##*/
 /*/////////////////////*/
 
-
 .background {
     background-color: #4D5373; 
     width: 100%; 
@@ -10,14 +9,12 @@
     position: absolute; 
     top: 0px;
     left: 0px; 
-    
 }
 
-
-body {background-color: white;
+body, .bottom-contact {
+    background-color: white;
     font-family: 'Oxygen', sans-serif;
     line-height: 150%; 
-
     }
 
 
@@ -34,7 +31,6 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%; 
-
 }
 
 
@@ -49,12 +45,9 @@ h1 {
 }
 
 
-
-
 /*///////////////////////////*/
 /*## Navigation Formatting ##*/
 /*///////////////////////////*/
-
 
 .nav {
     z-index: 0; 
@@ -64,16 +57,14 @@ h1 {
     align-items: center; 
     height: 75px; 
     margin-top: 140px; 
-    min-width: 250px; 
-    width: 50%; 
+    min-width: 400px; 
+    width: 70%; 
     color: white; 
 }
 
 .nav a:link, a:active {
     color: white; 
     text-decoration: none; 
-    padding-left: 5px; 
-    padding-right: 5px; 
 }
 
 .nav a:hover {
@@ -84,13 +75,15 @@ h1 {
     border-top: 1px solid white; 
     padding-top: 12px; 
     padding-bottom: 12px; 
-    padding-left: 5px; 
-    padding-right: 5px; 
 }
 
 
+/*/////////////////////*/
+/*## Main Content ##*/
+/*/////////////////////*/
 
 .right-sidebar{
+    width: 100%; 
     z-index: 0; 
     display: flex; 
     flex-direction: column; 
@@ -98,33 +91,38 @@ h1 {
 }
 
 .right-content {
-    padding-top: 195px; 
-    padding-left: 1px; 
-    min-width: 250px; 
-    width: 50%; 
+    padding-top: 80px; 
+    min-width: 400px; 
+    width: 70%; 
     line-height: 26px; 
 }
 
-.left-sidebar{
-    z-index: 0;
+
+/*///////////////////////*/
+/*## Footer Formatting ##*/
+/*///////////////////////*/
+
+.bottom {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
 }
 
-.profile-pic {
-    z-index:0; 
-    margin-top: 130px; 
- width: 200px; 
-height: 200px; 
-border: 5px solid white; 
-    background-color: white; 
-    
+.bottom-content {
+    min-width: 350px;
+    width: 60%; 
+    padding-top: 15px; 
+    border-top: 1px solid gray;  
+    display: flex; 
+    justify-content: flex-end; 
 }
 
-.contact-info {
-    padding-top: 20px; 
-    padding-left: 2px; 
-    width: 200px;    
-    line-height: 13px;
+footer a:link, a:active {
+    text-decoration: none; 
+    color: gray; 
+    font-family: 'Oxygen', sans-serif;
 }
 
-.contact-info p {
-    color: gray; }
+footer a:hover {
+    opacity: .8;
+}
