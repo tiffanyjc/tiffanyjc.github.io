@@ -69,7 +69,7 @@ h1 {
     color: white; 
 }
 
-.nav a:link, a:active {
+.nav a:link, a:active, a:visited {
     color: white; 
     text-decoration: none; 
     padding-left: 5px; 
@@ -89,6 +89,10 @@ h1 {
 }
 
 
+/*///////////////////////////*/
+/*## Right content stuff   ##*/
+/*///////////////////////////*/
+
 
 .right-sidebar{
     z-index: 0; 
@@ -104,6 +108,11 @@ h1 {
     width: 50%; 
     line-height: 29px; 
 }
+
+
+/*///////////////////////////*/
+/*## Left content stuff    ##*/
+/*///////////////////////////*/
 
 .left-sidebar{
     z-index: 0;
