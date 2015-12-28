@@ -4,7 +4,8 @@
 
 
 .background {
-    background-color:#475841; 
+/*    background-color:#475841; */
+    border-bottom: 1px solid #475841;  
     width: 100%; 
     height: 30vh; 
     position: absolute; 
@@ -69,7 +70,7 @@ h1 {
 }
 
 .nav a:link, a:active, a:visited {
-    color: white; 
+    color: #475841; 
     text-decoration: none; 
     padding-left: 5px; 
     padding-right: 5px; 
@@ -92,16 +93,17 @@ h1 {
 
 .nav a:before {
     padding-top: 15px; 
-    border-top: 1px solid white; 
+    border-top: 1px solid #475841; 
 }
 
 .nav a:after {
     padding-bottom: 15px; 
-    border-bottom: 1px solid white; 
+    border-bottom: 1px solid #475841; 
 }
 
 .nav a:hover:after, .nav a:hover:before {
     transform: scaleX(1); 
+    opacity: .5; 
 }
 
 
