@@ -4,7 +4,25 @@ body {
     align-items: center; 
     padding-top: 30px; 
     padding-bottom: 50px; 
-    font: 13px Century Gothic; 
+    font: 13px 'Cabin', sans-serif; 
+}
+
+#left a, #left a:active, a:visited {
+    text-decoration: none; 
+}
+
+#left {
+    width: 35%; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    position: fixed; 
+    top: 0px; 
+    left: 0px; 
+    padding-left: 0; 
+    height: 100%; 
 }
 
 h1 {
@@ -14,9 +32,31 @@ h1 {
     font-size: 40px;
 }
 
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: #DB9D47; 
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#links {
+    display: inline-block; 
+}
+
+#links a, a:active, a:visited {
+    color: #3A3042; 
+    font-style: normal; 
+    text-decoration: none; 
+}
+
+#links a:hover {
+    opacity: .8; 
+}
+
 #balls {
     width: 200; 
     height: 136px; 
+    margin-top: -80px; 
     display: flex; 
     flex-direction: column;
     align-content: space-between; 
@@ -25,91 +65,159 @@ h1 {
 
 /* stuff styling */ 
 
-#stuffs {
-    border-top: dashed #3A3042 2px; 
-    padding-top: 20px;
-    max-width: 720px; 
-    width: 100%; 
-    height: auto; 
+#right {
+/*    background-color: #3A3042;*/
+    width: 65%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0px; 
+    right: 2%; 
+    overflow: hidden; 
     display: flex; 
-    justify-content: center; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+/*    justify-content: center; */
+    align-items: center; 
+    flex-direction: column; 
+/*    flex-wrap: wrap; */
 }
 
+#home {
+    padding-top: 12%; 
+    padding-right: 5%; 
+    width: 90%; 
+    height: 75%; 
+    display: flex; 
+    display: flex; 
+    justify-content: space-between; 
+    align-content: space-around;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+/*    overflow: hidden; */
+}
+
+#about {
+/*    margin-top: 10%; */
+    padding-right: 5%; 
+    padding-left: 15%; 
+    width: 60%; 
+    height: 75%; 
+    position: absolute;
+    top: 200%; 
+    line-height: 2; 
+    font-size: 12pt; 
+}
+
+
+
+
 .stuff {
-    height: 200px; 
-    width: 200px;    
+    border-radius: 600px; 
+    height: 250px; 
+    width: 250px;    
     margin: 5px; 
     position: relative;    
-    background-color: #FF784F;
+    margin-left: 20px; 
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-color: white; 
+    border: 1px solid white; 
     opacity: 1; 
     transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
 }
 
+.stuff:nth-child(n+4) {
+    margin-top: 25px; 
+}
+
 .stuff:nth-child(1) {
-    background-image: url(images/tiff.png); 
+    background-image: url(images/prof.JPG); 
     background-size: cover;
-    opacity: .9;
+/*    opacity: .9;*/
+}
+
+.stuff:nth-child(2) {
+    background-image: url('http://luciafgarcia.com/wp-content/uploads/2014/04/adobe_workshop_sf.jpg'); 
+    background-size: cover;
+/*    opacity: .9;*/
+}
+
+.stuff:nth-child(3) {
+    background-image: url('https://scontent.fewr1-1.fna.fbcdn.net/t31.0-8/11894004_1056638111015650_705003724819042970_o.jpg'); 
+    background-size: cover; 
+/*    opacity: .9; */
+}
+
+.stuff:nth-child(4) {
+    background-image: url(images/cscamp.jpg); 
+    background-size: cover; 
+/*    opacity: .9; */
 }
 
 .stuff:nth-child(5) {
     background-image: url(images/hab.png); 
     background-size: cover;
-    opacity: .9;
+/*    opacity: .9;*/
+}
+
+.stuff:nth-child(6) {
+    background-image: url('http://watchdog.org/wp-content/blogs.dir/1/files/2015/01/Red-light.jpg'); 
+    background-size: cover; 
+/*    opacity: .9; */
 }
 
 .stuff h2 {
-    font-family: 'Pacifico', cursive;
-    color: white; 
+    font-family: 'Cabin', sans-serif; 
     font-weight: 100;
-    font-size: 20px;    
+    font-size: 18px;    
     position: absolute;
-	bottom: 0;
-	right: 10px; 
-	width: 100%;
-	box-sizing: border-box;
+	bottom: 3;
+	right: 12px; 
+    border-bottom: 2px solid #3A3042; 
+    opacity: .9; 
+    background-color: white; 
 	margin: 0;
-	padding: 6px;
+	padding: 4px;
 	text-align: right;
     text-transform: lowercase; 
     letter-spacing: 2pt; 
-	color: white;
+	color: #3A3042;
 	z-index: 12;
 }
 
 .stuff:hover p {
 	opacity: 1;
 	transform: translate(5);
+    border-radius: 500px; 
 }
 
 .stuff p {
+    border-radius: 500px; 
     transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
     transform: translate(0px, 20px);
     opacity: 0;
     z-index: 11;
     color: white;
+    font-size: 17px; 
+    text-align: center; 
+    vertical-align: middle; 
     position: absolute;
+    padding-top: 50px; 
     left: 20px;
     top: 7px;
     right: 20px;
     bottom: 55px;
     margin: 0;
-    line-height: 20px; 
+    line-height: 25px; 
 /*    font: 15px Calibri; */
 }
 
 .stuff:hover:before {
 	opacity: 0.9;
-    -ms-transform: rotate(4deg); /* IE 9 */
-    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
-    transform: rotate(4deg);
-    
 }
 
 .stuff:before {
+    border-radius: 500px; 
     content: "";
     display: block;
     height: 100%;
