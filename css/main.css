@@ -131,7 +131,7 @@ h3 {
 }
 
 .stuff:nth-child(1) {
-    background-image: url(images/prof.JPG); 
+    background-image: url(../images/prof.JPG); 
     background-size: cover;
 /*    opacity: .9;*/
 }
@@ -149,13 +149,13 @@ h3 {
 }
 
 .stuff:nth-child(4) {
-    background-image: url(images/cscamp.jpg); 
+    background-image: url(../images/cscamp.jpg); 
     background-size: cover; 
 /*    opacity: .9; */
 }
 
 .stuff:nth-child(5) {
-    background-image: url(images/hab.png); 
+    background-image: url(../images/hab.png); 
     background-size: cover;
 /*    opacity: .9;*/
 }
