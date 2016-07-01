@@ -74,7 +74,6 @@ h3 {
     right: 2%; 
     overflow: hidden; 
     display: flex; 
-/*    justify-content: center; */
     align-items: center; 
     flex-direction: column; 
 /*    flex-wrap: wrap; */
@@ -111,8 +110,8 @@ h3 {
 
 .stuff {
     border-radius: 600px; 
-    height: 250px; 
-    width: 250px;    
+    height: 200px; 
+    width: 200px;    
     margin: 5px; 
     position: relative;    
     margin-left: 20px; 
@@ -189,6 +188,7 @@ h3 {
 	opacity: 1;
 	transform: translate(5);
     border-radius: 500px; 
+    font-size: 10pt; 
 }
 
 .stuff p {
@@ -198,18 +198,16 @@ h3 {
     opacity: 0;
     z-index: 11;
     color: white;
-    font-size: 17px; 
+    font-size: 10px; 
     text-align: center; 
     vertical-align: middle; 
     position: absolute;
-    padding-top: 50px; 
+    top: 20px; 
     left: 20px;
-    top: 7px;
     right: 20px;
     bottom: 55px;
     margin: 0;
     line-height: 25px; 
-/*    font: 15px Calibri; */
 }
 
 .stuff:hover:before {
