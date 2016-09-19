@@ -110,13 +110,9 @@ h3 {
 
 .stuff {
     border-radius: 600px; 
-    height: 200px; 
-    width: 200px;    
-    margin: 5px; 
+    height: 210px; 
+    width: 210px;    
     position: relative;    
-    margin-left: 20px; 
-    margin-right: 20px;
-    margin-bottom: 30px;
     background-color: white; 
     border: 1px solid white; 
     opacity: 1; 
