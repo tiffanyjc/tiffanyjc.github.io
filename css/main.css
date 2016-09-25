@@ -4,7 +4,7 @@ body {
     align-items: center; 
     padding-top: 30px; 
     padding-bottom: 50px; 
-    font: 13px 'Cabin', sans-serif; 
+    font: 12px 'Arimo', sans-serif; 
 }
 
 #left a, #left a:active, a:visited {
@@ -86,6 +86,7 @@ a:hover, a:active {
     display: flex; 
     align-items: center; 
     flex-direction: column; 
+    font: 12px 'Arimo', sans-serif;
 /*    flex-wrap: wrap; */
 }
 
@@ -180,7 +181,7 @@ a:hover, a:active {
 }
 
 .stuff:nth-child(4) {
-    background-image: url(../images/cscamp.jpg); 
+    background-image: url(../images/SF.png); 
     background-size: cover; 
 /*    opacity: .9; */
 }
@@ -198,7 +199,8 @@ a:hover, a:active {
 }
 
 .stuff h2 {
-    font-family: 'Cabin', sans-serif; 
+/*    font-family: 'Cabin', sans-serif; */
+    font: 10px 'Arimo', sans-serif;
     font-weight: 100;
     font-size: 18px;    
     position: absolute;
@@ -239,7 +241,7 @@ a:hover, a:active {
     right: 20px;
     bottom: 55px;
     margin: 0;
-    line-height: 25px; 
+    line-height: 20px; 
 }
 
 .stuff:hover:before {
@@ -391,8 +393,9 @@ a:hover, a:active {
 .sectionBody {
     width: 80%; 
     margin-left: 100px; 
-    font-family: 'Century Gothic';
-    font-size: 18px; 
+    font-family: 'Arimo', sans-serif;
+    line-height: 25px; 
+    font-size: 15px; 
     z-index: 0; 
     position: relative; 
     top: 250px; 
@@ -412,6 +415,7 @@ a:hover, a:active {
     background-size: cover; 
     margin: 50 50; 
     border-bottom: 5px solid #3A3042; 
+    
 }
 
 #adobeHead {
@@ -429,6 +433,23 @@ a:hover, a:active {
     margin: 50 50; 
     border-bottom: 5px solid #3A3042; 
 }
+
+#illustrationHead {
+/*    align-self: flex-start; */
+    border-radius: 600px; 
+    height: 170px; 
+    width: 170px;    
+    position: absolute;
+    right: 0; 
+    background-color: white; 
+    border: 1px solid white; 
+    opacity: 1; 
+    background-image: url(../images/SF.png);
+    background-size: cover; 
+    margin: 50 50; 
+    border-bottom: 5px solid #3A3042; 
+}
+
 
 .orange {
     width: 100%; 
