@@ -157,10 +157,9 @@ a:hover, a:active {
 }
 
 .stuff h2 {
-/*    font-family: 'Cabin', sans-serif; */
-    font: 10px 'Arimo', sans-serif;
+    font-family: 'Arimo', sans-serif; 
     font-weight: 100;
-    font-size: 18px;    
+    font-size: 13px;    
     position: absolute;
 	bottom: 3;
 	right: 12px; 
@@ -183,23 +182,29 @@ a:hover, a:active {
     font-size: 10pt; 
 }
 
-.stuff p {
+.stuff p, .stuff:hover p {
     border-radius: 500px; 
     transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
     transform: translate(0px, 20px);
-    opacity: 0;
-    z-index: 11;
+    font-family: 'Arimo', sans-serif; 
+    font-size: 11px; 
     color: white;
     font-size: 10px; 
+    letter-spacing: .5px; 
     text-align: center; 
     vertical-align: middle; 
     position: absolute;
-    top: 20px; 
+    top: 10px; 
     left: 20px;
     right: 20px;
     bottom: 55px;
     margin: 0;
     line-height: 20px; 
+}
+
+.stuff p {
+    opacity: 0; 
+    z-index: 11; 
 }
 
 .stuff:hover:before {
