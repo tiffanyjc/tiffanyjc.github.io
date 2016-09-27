@@ -97,6 +97,8 @@ a:hover, a:active {
 
 .scroll {
     overflow-y: scroll;
+
+    
 }
 
 #home {
@@ -343,6 +345,7 @@ a:hover, a:active {
 
 /*Side pages*/
 
+/*
 .sectionHead {
     width: 100%; 
 }
@@ -354,17 +357,14 @@ a:hover, a:active {
     font-size: 20px;
     z-index: 11; 
     position: absolute; 
-/*    top: 120px;*/
     top: 20%; 
-/*    left: 180; */
     left: 170px; 
     opacity: .8; 
     background-color: white; 
-/*    width: 80%; */
     border-bottom: 2px solid #3A3042; 
     padding-left: 5px; 
-/*    border-radius: 20px 20px 0 20px; */
 }
+*/
 
 .sectionBody {
     width: 78%; 
@@ -375,26 +375,30 @@ a:hover, a:active {
     font-size: 13px; 
     z-index: 0; 
     position: relative; 
-    top: 35%; 
+    top: calc(5% + 100px); 
     padding-right: 15%; 
 }
 
 .sectionBody h3 {
     font-family: 'Arimo', sans-serif;
     color: #DB9D47; 
+    background-color: white; 
+    max-width: 50%; 
+    border-bottom: 2px solid white; 
+    opacity: .8; 
     font-weight: 100;
     font-size: 25px;
     margin-left: -10px; 
 }
 
 #aboutHead {
-/*    align-self: flex-start; */
-    border-radius: 600px; 
+    align-self: flex-end; 
+/*    border-radius: 600px; */
     border-radius: 600px 600px 600px 600px; 
     height: 150px; 
     width: 150px;    
     position: absolute;
-    left: 0; 
+    right: 0; 
     top: 5%; 
     background-color: white; 
     border: 1px solid white; 
@@ -402,7 +406,7 @@ a:hover, a:active {
     background-image: url(../images/prof.JPG);
     background-size: cover; 
     margin: 50 50; 
-/*    border-bottom: 5px solid #3A3042; */
+    border-bottom: 5px solid #3A3042; 
     
 }
 
