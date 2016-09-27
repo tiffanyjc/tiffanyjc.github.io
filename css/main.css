@@ -89,8 +89,8 @@ a:hover, a:active {
     right: 2%; 
     overflow: hidden; 
     display: flex; 
-    align-items: center; 
     flex-direction: column; 
+/*    justify-content: center; */
     font: 12px 'Arimo', sans-serif;
 
 }
@@ -347,38 +347,17 @@ a:hover, a:active {
 
 /*Side pages*/
 
-/*
-.sectionHead {
-    width: 100%; 
-}
-
-.sectionHead h2 {
-    font-family: 'Pacifico', cursive;
-    color: #3A3042; 
-    font-weight: 100;
-    font-size: 20px;
-    z-index: 11; 
-    position: absolute; 
-    top: 20%; 
-    left: 170px; 
-    opacity: .8; 
-    background-color: white; 
-    border-bottom: 2px solid #3A3042; 
-    padding-left: 5px; 
-}
-*/
 
 .sectionBody {
     width: 78%; 
     margin-left: 70px; 
-    margin-top: 40px; 
     font-family: 'Arimo', sans-serif;
     line-height: 25px; 
     font-size: 13px; 
     z-index: 0; 
     position: relative; 
-    top: calc(5% + 100px); 
     padding-right: 15%; 
+    margin: auto; 
 }
 
 .sectionBody h3 {
@@ -399,7 +378,7 @@ a:hover, a:active {
     width: 150px;    
     position: absolute;
     right: 0; 
-    top: 5%; 
+    top: -150px; 
     background-color: white; 
     border: 1px solid white; 
     opacity: 1; 
@@ -411,15 +390,16 @@ a:hover, a:active {
 }
 
 #adobeHead {
-       border-radius: 600px; 
+    border-radius: 600px; 
     height: 150px; 
     width: 150px;    
     position: absolute;
-    right: 0; 
-    top: 5%; 
+    left: calc(78%); 
+    top: -30px; 
     background-color: white; 
     border: 1px solid white; 
     opacity: 1; 
+    z-index: -1; 
     background-image: url('http://luciafgarcia.com/wp-content/uploads/2014/04/adobe_workshop_sf.jpg');
     background-size: cover; 
     margin: 50 50; 
