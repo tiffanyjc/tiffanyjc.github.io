@@ -79,7 +79,7 @@ a:hover, a:active {
 
 /* stuff styling */ 
 
-#right {
+.right {
 /*    background-color: #3A3042;*/
     width: 65%; 
     max-width: 1000px; 
@@ -92,7 +92,11 @@ a:hover, a:active {
     align-items: center; 
     flex-direction: column; 
     font: 12px 'Arimo', sans-serif;
-/*    flex-wrap: wrap; */
+
+}
+
+.scroll {
+    overflow-y: scroll;
 }
 
 #home {
@@ -348,24 +352,27 @@ a:hover, a:active {
     color: #3A3042; 
     font-weight: 100;
     font-size: 20px;
-    z-index: -1; 
+    z-index: 11; 
     position: absolute; 
 /*    top: 120px;*/
     top: 20%; 
-    left: 180; 
+/*    left: 180; */
+    left: 170px; 
+    opacity: .8; 
     background-color: white; 
-    width: 80%; 
+/*    width: 80%; */
     border-bottom: 2px solid #3A3042; 
     padding-left: 5px; 
 /*    border-radius: 20px 20px 0 20px; */
 }
 
 .sectionBody {
-    width: 80%; 
-    margin-left: 100px; 
+    width: 78%; 
+    margin-left: 70px; 
+    margin-top: 40px; 
     font-family: 'Arimo', sans-serif;
     line-height: 25px; 
-    font-size: 15px; 
+    font-size: 13px; 
     z-index: 0; 
     position: relative; 
     top: 35%; 
@@ -383,10 +390,11 @@ a:hover, a:active {
 #aboutHead {
 /*    align-self: flex-start; */
     border-radius: 600px; 
-    height: 130px; 
-    width: 130px;    
+    border-radius: 600px 600px 600px 600px; 
+    height: 150px; 
+    width: 150px;    
     position: absolute;
-    right: 0; 
+    left: 0; 
     top: 5%; 
     background-color: white; 
     border: 1px solid white; 
@@ -394,7 +402,7 @@ a:hover, a:active {
     background-image: url(../images/prof.JPG);
     background-size: cover; 
     margin: 50 50; 
-    border-bottom: 5px solid #3A3042; 
+/*    border-bottom: 5px solid #3A3042; */
     
 }
 
