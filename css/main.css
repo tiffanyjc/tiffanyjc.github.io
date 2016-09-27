@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none; 
+}
+
 body {
     display: flex; 
     flex-direction: column; 
@@ -78,6 +82,7 @@ a:hover, a:active {
 #right {
 /*    background-color: #3A3042;*/
     width: 65%; 
+    max-width: 1000px; 
     height: 100%; 
     position: absolute; 
     top: 0px; 
@@ -417,6 +422,7 @@ a:hover, a:active {
     width: 130px;    
     position: absolute;
     right: 0; 
+    top: 5%; 
     background-color: white; 
     border: 1px solid white; 
     opacity: 1; 
