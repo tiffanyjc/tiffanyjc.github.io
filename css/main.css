@@ -391,10 +391,10 @@ a:hover, a:active {
 
 #adobeHead {
     border-radius: 600px; 
-    height: 150px; 
-    width: 150px;    
-    position: absolute;
-    left: calc(78%); 
+    height: 100px; 
+    width: 100px;    
+    position: fixed;
+    left: calc(85%); 
     top: -30px; 
     background-color: white; 
     border: 1px solid white; 
@@ -411,11 +411,12 @@ a:hover, a:active {
     height: 150px; 
     width: 150px;    
     position: absolute;
-    right: 0; 
-    top: 5%; 
+    left: calc(78%); 
+    top: -30px; 
     background-color: white; 
     border: 1px solid white; 
     opacity: 1; 
+    z-index: -1; 
     background-image: url(../images/SF.png);
     background-size: cover; 
     margin: 50 50; 
