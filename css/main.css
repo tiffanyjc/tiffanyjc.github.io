@@ -424,3 +424,10 @@ a:hover, a:active {
     margin: 50 50; 
     border-bottom: 5px solid #3A3042; 
 }
+
+.mobileScreen {
+    margin: 15px; 
+    width: 30%; 
+    min-width: 250px; 
+    box-shadow: 1px 1px 15px gray; 
+}
