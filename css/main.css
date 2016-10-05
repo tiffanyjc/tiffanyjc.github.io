@@ -350,7 +350,7 @@ a:hover, a:active {
 /*Side pages*/
 
 
-.sectionBody {
+.sectionBody, .sectionBody table {
     width: 78%; 
     margin-left: 70px; 
     font-family: 'Arimo', sans-serif;
@@ -360,6 +360,10 @@ a:hover, a:active {
     position: relative; 
     padding-right: 15%; 
     margin: auto; 
+}
+
+.sectionBody table {
+    width: 100%; 
 }
 
 .sectionBody h3 {
@@ -430,4 +434,10 @@ a:hover, a:active {
     width: 30%; 
     min-width: 250px; 
     box-shadow: 1px 1px 15px gray; 
+}
+
+.laptopScreen {
+    margin: 15px; 
+    width: 40%; 
+    min-width: 250px; 
 }
