@@ -43,6 +43,7 @@ h3 {
     font-size: 25px;
 }
 
+
 #links {
     display: inline-block; 
 }
@@ -399,17 +400,42 @@ a:hover, a:active {
     border-radius: 600px; 
     height: 100px; 
     width: 100px;    
-    position: fixed;
-    left: calc(85%); 
-    top: -30px; 
-    background-color: white; 
+    position: absolute;
+    top: 1%; 
+    right: 1%; 
+/*    background-color: white; */
     border: 1px solid white; 
     opacity: 1; 
     z-index: -1; 
     background-image: url('http://luciafgarcia.com/wp-content/uploads/2014/04/adobe_workshop_sf.jpg');
     background-size: cover; 
-    margin: 50 50; 
+/*    margin: 50 50; */
     border-bottom: 5px solid #3A3042; 
+}
+
+#back {
+    position: absolute; 
+    font-size: 18px; 
+    height: 70px; 
+    bottom: 1%; 
+    right: 1%; 
+    margin: 0px; 
+    padding: 0px; 
+    z-index: 100; 
+    line-height: 20px;
+    letter-spacing: 3pt; 
+}
+
+#back h3 {
+    font-family: 'Arimo', sans-serif;
+    color: #DB9D47; 
+    background-color: white; 
+    max-width: 50%; 
+    border-bottom: 2px solid white; 
+    opacity: .8; 
+    font-weight: 100;
+    font-size: 25px;
+    margin-left: -10px; 
 }
 
 #illustrationHead {
@@ -438,6 +464,6 @@ a:hover, a:active {
 
 .laptopScreen {
     margin: 15px; 
-    width: 40%; 
+    width: 45%; 
     min-width: 250px; 
 }

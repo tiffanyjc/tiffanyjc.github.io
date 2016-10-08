@@ -7,7 +7,7 @@
 </head>
 
 <body> 
-    
+
     <div id="left">
         <div id="balls"> 
             <div class="ball"> </div>   
@@ -53,180 +53,170 @@
             </a>
         </p>
     </div>
-        
     
     <div id="adobeHead" style="background-image: url('https://lh3.googleusercontent.com/UvEwv56zTj13dO1qr4fj4wDDc5Fwzc6O1ke4DnBSKN1Wa42zBDzGREwVLD9HqEAoIzs=w300-rw');"> 
     </div>
-    
+
     <div id="back">
         <h3 style="opacity: .7; color: #FF784F;"><a href="/pages/design.html" style="text-decoration: none;">ba<br />ck</a></h3>
     </div>
-    
+
     <div class="right scroll"> 
-        
-        
-        
+
         <div class="sectionBody"> 
-            
-            
-            
-            <h1 style="font-size: 25px; line-height: 35px; color: #DB9D47; letter-spacing: 1px; font-family: 'Arimo', sans-serif; margin-left: -10px; "><b>Venmo Pay / Request Redesign</b></h1>
-          
-            
-            <p>
-                Over summer 2016, I decided to redesign Venmo’s Pay/Request feature to increase usability. I neither claim to work for Venmo nor am I saying that this is what Venmo will look like in the future. This is just some design thinking that went into a product I use often. (:
-            </p>
-            
-            <h3>Motivation</h3>
-            
-            <p>
-                After a dimsum lunch with six friends, it came time to pay the bill. “Let’s have one person use their card and everyone else can Venmo!” Friend A said. We all agreed, and Friend A volunteered to use his credit card.
-            </p>
-            
-            <p>
-                From there, a whole slew of problems arose. While dimsum was certainly an accumulation of problems with the Venmo interface (and perhaps our sleepiness from too much food), there are several key obstacles that users seem to face with Venmo which I have seen in numerous other situations:
-            </p>
-            
-            <ul>
-                <li>Confusion over total monetary amount for group payments / requests</li>
-                <li>Uncertainty with selecting the correct participants for a transaction</li>
-                <li>Paying instead of requesting</li>
-            </ul>
-            
-            <p>
-                Finally, Friend A received the money he was owed and we finished lunch.
-            </p>
-            
+
            
+
+            <h1 style="font-size: 25px; line-height: 35px; color: #DB9D47; letter-spacing: 1px; font-family: 'Arimo', sans-serif; margin-left: -10px; "><b>Duolingo Homepage Redesign</b></h1>
+
+
+            <p>
+                 I neither claim to work for Duolingo nor am I saying that this is what Duolingo will look like in the future. This is just some design thinking that went into a product I use often. (:
+            </p>
+
+            <h3>Motivation</h3>
+
+            <p>
+                As someone who grew up learning several different languages at once, I've always loved applications and platforms geared towards learning languages. 
+            </p>
+
+            <p>
+                I actually began using Duolingo back when I was in seventh grade (yikes!), and it's incredible to see how far the company and product have come since then! 
+            </p>
+
+            <p>
+                As a tribute to a product that I genuinely enjoy, I identified one area which I thought Duolingo could improve in, and turned it into a redesign exercise. 
+            </p>
+
+
             <h3>Hypothesis</h3>
-            
+
             <p>
                 My (educated) guess as to why these problems arise in the Pay / Request process is that the information displayed to users at any given point is insufficient for them to feel 100 percent in control.
             </p>
-            
+
             <p>
                 Consequently, proceeding forward in a transaction takes a longer period of time, and the conversion from one point to the next point in the Pay / Request pipeline is lower than what it could be with an interface and visual redesign.
             </p>
-            
-            
+
+
             <h3>Process</h3>
-            
+
             <p>
                 I first began by mapping out all of the distinct features in Venmo’s current Pay / Request design in order to better familiarize myself with all the different edge cases that might arise (i.e. multiple people v.s. one person, not typing in a description for the payment, having to go back and change names, etc.).
             </p>
-            
+
             <p>
                 From there, I also did some reading on Venmo’s past history with data-driven design for the Pay / Request process, examined the pros and cons of other competitors’ interfaces and flows, and began ideating through what an interface for Venmo’s Pay / Request could look like.
             </p>
-            
+
             <h3>Solution</h3>
-            
+
             <p>
                 After asking for feedback from my peers and going through multiple rounds of iteration, I settled on a design that was both intuitive, familiar, and optimized for the display of transaction information.
             </p>
-            
+
             <p>
                 I began by doing a quick redesign for Venmo’s newsfeed (while adhering to their style guide) in order to 1) get a feel for how I would want the rest of the redesign to visually look 2) practice displaying important information without users having to click anything and 3) implement 1 and 2 while still preserving modularity.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Newsfeed.png">
             </div>
-            
-            
+
+
             <p>
                 Based on my own experiences and what I’ve heard from talking to peers, it’s always important to know how much money is in your Venmo account right from the get-go (should I transfer it back into my bank account? Will my next payment be using my Venmo money or will it also draw from my bank account?).
             </p>
-            
+
             <p>
                 From there, I thought about ways to make the process of selecting transaction participants more intuitive.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Pay/Charge%201.png">
             </div>
-            
+
             <p>
                 The advantage of the current selection process includes categorization of people (the users with whom you have the most extensive transaction history with will appear first in the search bar). I decided to preserve this in my redesign, while also adding in some more visual design to show when a user had been selected to be a participant in the transaction.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Pay/Charge%202%20Type.png">
                 <img class="mobileScreen" src="venmo/Pay/Charge%202.png">
             </div>
-            
+
             <p>
                 Fun fact: seems like there’s also a bug in Venmo where if you try to send money to someone with the same name as you, the Done button doesn’t appear!
             </p>
-            
+
             <p>
                 For the transaction screen, in addition to having the description bar active by default, I decided to include users’ profile pictures in addition to their usernames in addition to their full names. While there are certainly times when redundancy is… redundant, I figured (based on conversations with friends) that the different bits of information (i.e. name, profile picture, and username) would be able to independently validate that the user selected the correct participant, and consequently put together they would make the user feel extremely secure in sending money (this is what I imagine will increase the conversion rate from initiating a transaction to completing a transaction!).
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Pay/Charge%203.png">
                 <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group.png">
             </div>
-            
+
             <p>
                 The con to all of this is that with many, many participants in a transaction, there will be the issue of space and information overload. While this may certainly be a problem, I attempt to navigate around it by creating a horizontally scrolling participants list, which will keep the user on the transaction screen but still allow them to view every participant’s information.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Pay/Charge%204.png">
                 <img class="mobileScreen" src="venmo/Pay/Charge%205.png">
             </div>
-            
+
             <p>
                 For a transaction between two people, it was easy enough to create an intuitive, modular flow that clearly showed the amount of money to be exchanged.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy.png">
                 <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy%202.png">
             </div>
-            
+
             <p>
                 For transactions with more than two people, while Venmo currently only shows the amount per person and the total charge, I attempted to show the connection between 1) the amount per person that a user enters with the number pad and 2) the total amount of money that a user can expect to pay/receive, based on the total number of participants in the transaction.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/buttons.png" style="box-shadow: none;">
             </div>
-            
+
             <p>
                 Finally, I decided to create redundancy through visual cues for the Pay and Request buttons, which ideally will prevent users from accidentally hitting the wrong transaction type.
             </p>
-            
+
             <div align="center">
                 <img class="mobileScreen" src="venmo/Paying.png">
                 <img class="mobileScreen" src="venmo/Paying%20Copy.png">
             </div>
-            
+
             <p>
                 And from there… the transaction is done!
             </p>
-            
+
             <h3>Takeaways</h3>
-            
+
             <ul>
                 <li>Redundancy isn’t always bad. In fact, it can be extremely helpful in encouraging users when their next actions depend heavily on key information.</li>
                 <li>The beauty in mobile payment apps like Venmo is their ability to expedite transactions. It takes a lot of coordination to move money between large groups of people, and a lot of good design to make even that process manageable.</li>
             </ul>
-            
+
             <h3>Things I'm working on</h3>
-            
+
             <p>
                 While I have all the screen mockups and interface designs for the Pay / Request process, I’m also starting to think about the interaction design that will come into play (will the next screen slide in? Fade in? Slide out?). There’s an entirely separate space that will also help in users’ understanding, but definitely something that would help to determine the overall usability and effectiveness of this design!
             </p>
-            
+
             <p>&nbsp;</p>
-         
-   
+
         </div>
 
 
-        
-        
+
+
     </div>
 </body>
