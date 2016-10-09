@@ -54,11 +54,11 @@
         </p>
     </div>
     
-    <div id="adobeHead" style="background-image: url(duolingo/main.png);"> 
+    <div id="adobeHead" style="background-image: url('https://netskills.jiscinvolve.org/wp/files/2014/01/duolingo.png');"> 
     </div>
 
     <div id="back">
-        <h3 style="opacity: .7; color: #FF784F;"><a href="/pages/design.html" style="text-decoration: none;">ba<br />ck</a></h3>
+        <h3 style="color: #FF784F;"><a href="/pages/design.html" style="text-decoration: none;">ba<br />ck</a></h3>
     </div>
 
     <div class="right scroll"> 
@@ -67,7 +67,7 @@
 
            
 
-            <h1 style="font-size: 25px; line-height: 35px; color: #DB9D47; letter-spacing: 1px; font-family: 'Arimo', sans-serif; margin-left: -10px; "><b>Duolingo Homepage Redesign</b></h1>
+            <h1 style="font-size: 25px; line-height: 35px; color: #DB9D47; letter-spacing: 1px; font-family: 'Arimo', sans-serif; margin-left: -10px; "><b>Duolingo Feature Proposal and Design</b></h1>
 
 
             <p>
@@ -85,137 +85,140 @@
             </p>
 
             <p>
-                As a tribute to a product that I genuinely enjoy, I identified one area which I thought Duolingo could improve in, and turned it into a redesign exercise. 
+                As a tribute to a product that I genuinely enjoy, I identified one area which I thought Duolingo could improve in, and took on both product manager and designer hats to address the issue. The final products included: 
+                
+                <ol>
+                    <li>A product spec</li>
+                    <li>High fidelity wireframes</li>
+                    <li>A slide deck for feature proposal</li>
+                </ol>
             </p>
 
 
-            <h3>Hypothesis</h3>
+            <h3>Research</h3>
 
             <p>
-                My (educated) guess as to why these problems arise in the Pay / Request process is that the information displayed to users at any given point is insufficient for them to feel 100 percent in control.
+                I figured that the best way to begin looking for ways to improve Duolingo would be by checking to see what Duolingo users have historically liked and disliked. Some useful resources I found were the <a href="https://www.reddit.com/r/duolingo/" target="_blank">Duolingo subReddit</a> and <a href="https://www.duolingo.com/discussion" target="_blank">Duolingo Discussions center</a>. 
+            </p>
+        
+        <div align="center">
+            <img style="width:60%" src="duolingo/stats.png">
+        </div>
+
+            <p>
+                Several interesting things I observed: 
+                <ul>
+                    <li>Luis, Duolingo's CEO, has a very strong presence in both online communities. He is also very responsive to feedback.</li>
+                    <li>There was a lot of push back against Duolingo's website redesign several years ago. Interestingly, the stats would indicate that users actually love it. Maybe sometimes people don't actually know what's good for them?</li>
+                    <li>Along a similar thread (although arguably unrelated to this writeup), I'm a huge fan of how Duolingo publishes all their findings on a blog. Definitely keeps the spirit of learning alive.</li>
+                </ul>
+            </p>
+    
+
+            <h3>Identifiable Problems</h3>
+
+            <p>
+                Based on the research that I did, it was evident that - by all indicators - Duolingo is doing well; the number of users has increased, the number of types of users has increased, and the sheer amount of language courses offered on the platform is also significantly more than what it was several years ago. That being said (and as Luis himself has been quoted saying in many interviews), it's the number of daily active users there are, their engagement with Duolingo, and the amount of time they're spending that <i>actually</i> counts. 
             </p>
 
             <p>
-                Consequently, proceeding forward in a transaction takes a longer period of time, and the conversion from one point to the next point in the Pay / Request pipeline is lower than what it could be with an interface and visual redesign.
+                From there, I decided that my problem would be a pretty broad - but extremely important one: how can we increase engagement on Duolingo? 
             </p>
+    
 
-
-            <h3>Process</h3>
+            <h3>Design - Brainstorming</h3>
 
             <p>
-                I first began by mapping out all of the distinct features in Venmo’s current Pay / Request design in order to better familiarize myself with all the different edge cases that might arise (i.e. multiple people v.s. one person, not typing in a description for the payment, having to go back and change names, etc.).
+                In design, there's a lot of emphasis on placing things "above the fold". A quick analysis of what was "above the fold" for Duolingo and what was "below the fold" on web showed the following: 
             </p>
-
+    
+            <div align="center">
+                <img style="width:80%" src="duolingo/fold.png">
+            </div>
+<!--   --------IMAGE HERE------------>
             <p>
-                From there, I also did some reading on Venmo’s past history with data-driven design for the Pay / Request process, examined the pros and cons of other competitors’ interfaces and flows, and began ideating through what an interface for Venmo’s Pay / Request could look like.
+                In a nutshell, a lot of the modules that encourage users to engage in Duolingo (i.e. the strengthen skills button and the leadership board) aren't even visible when a user first loads the homepage. Additionally, because a user's most recently learned skill is always located at the very bottom of the long vertical homepage, it seems that the probability that a user will scroll quickly to the bottom of their screen - and thus miss the button and the module - is pretty high. 
             </p>
-
-            <h3>Solution</h3>
-
+    
             <p>
-                After asking for feedback from my peers and going through multiple rounds of iteration, I settled on a design that was both intuitive, familiar, and optimized for the display of transaction information.
+                To validate that my hypothesis was correct, I did an informal survey of some of my friends who I know use Duolingo. Their responses to my two questions were below: 
             </p>
+    
+            <div align="center">
+                <img style="width:80%" src="duolingo/hiddenSkills.png">
+            </div>
 
-            <p>
-                I began by doing a quick redesign for Venmo’s newsfeed (while adhering to their style guide) in order to 1) get a feel for how I would want the rest of the redesign to visually look 2) practice displaying important information without users having to click anything and 3) implement 1 and 2 while still preserving modularity.
-            </p>
+            And this one:
+
 
             <div align="center">
-                <img class="mobileScreen" src="venmo/Newsfeed.png">
+                <img style="width:80%" src="duolingo/hiddenLeadership.png">
             </div>
 
 
             <p>
-                Based on my own experiences and what I’ve heard from talking to peers, it’s always important to know how much money is in your Venmo account right from the get-go (should I transfer it back into my bank account? Will my next payment be using my Venmo money or will it also draw from my bank account?).
+                After more design feedback, brainstorming, bad mockups, and iterations, I finally came to a new feature proposal that I believed would increase user engagement and the daily amount of time a user spent on each of her languages. I call it the Duolingo Homepage 2.0! (A little lacking in creativity for the title, I'll admit...)
             </p>
-
-            <p>
-                From there, I thought about ways to make the process of selecting transaction participants more intuitive.
-            </p>
-
+    
             <div align="center">
-                <img class="mobileScreen" src="venmo/Pay/Charge%201.png">
+                <img style="width:100%" src="duolingo/compared.png">
             </div>
 
+            <h3>Homepage 2.0</h3>
+    
+    
             <p>
-                The advantage of the current selection process includes categorization of people (the users with whom you have the most extensive transaction history with will appear first in the search bar). I decided to preserve this in my redesign, while also adding in some more visual design to show when a user had been selected to be a participant in the transaction.
+                One of the biggest advantages to the current Duolingo homepage is, in my opinion, the modularity of it all. For the user, there's a clear plus with regards to being able to compartmentalize information and find everything that you need. On the engineering and product side, modularity makes it easy to break down tasks and try new things one at a time. 
             </p>
+    
+            <p>
+                My redesign attempts to preserve that modularity while still accounting for the "above the fold" mantra, essentially creating what looks like a dashboard for the gaming Duolingo user:
+            </p>
+    
+            <div align="center">
+                <img style="width:100%" src="duolingo/modules.gif">
+            </div>  
+            
+            <p>
+                Whereas before it took a lot of user effort to parse information when they were trying to locate specific course modules and skill sets, finding an old skill is now as easy as typing into the search bar and filtering down your results. In addition to the easier usabillity, I imagine this will increase user engagement with past skills and words that they have already learned. 
+            </p>
+        
+    
+            <div align="center">
+                <img style="width:100%" src="duolingo/search.gif">
+            </div>
+    
+            <p>
+                I also redesigned the leadership board to be more visually demonstrative of a user's progress relative to his or her friends: 
+            </p>
+
 
             <div align="center">
-                <img class="mobileScreen" src="venmo/Pay/Charge%202%20Type.png">
-                <img class="mobileScreen" src="venmo/Pay/Charge%202.png">
+                <img style="width:100%" src="duolingo/friends.gif">
             </div>
-
-            <p>
-                Fun fact: seems like there’s also a bug in Venmo where if you try to send money to someone with the same name as you, the Done button doesn’t appear!
-            </p>
-
-            <p>
-                For the transaction screen, in addition to having the description bar active by default, I decided to include users’ profile pictures in addition to their usernames in addition to their full names. While there are certainly times when redundancy is… redundant, I figured (based on conversations with friends) that the different bits of information (i.e. name, profile picture, and username) would be able to independently validate that the user selected the correct participant, and consequently put together they would make the user feel extremely secure in sending money (this is what I imagine will increase the conversion rate from initiating a transaction to completing a transaction!).
-            </p>
-
+    
+            Finally, I decided to examine the advantages of the Homepage 2.0 and compare them to the current homepage and its strengths: 
+    
+    
             <div align="center">
-                <img class="mobileScreen" src="venmo/Pay/Charge%203.png">
-                <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group.png">
-            </div>
-
-            <p>
-                The con to all of this is that with many, many participants in a transaction, there will be the issue of space and information overload. While this may certainly be a problem, I attempt to navigate around it by creating a horizontally scrolling participants list, which will keep the user on the transaction screen but still allow them to view every participant’s information.
-            </p>
-
-            <div align="center">
-                <img class="mobileScreen" src="venmo/Pay/Charge%204.png">
-                <img class="mobileScreen" src="venmo/Pay/Charge%205.png">
-            </div>
-
-            <p>
-                For a transaction between two people, it was easy enough to create an intuitive, modular flow that clearly showed the amount of money to be exchanged.
-            </p>
-
-            <div align="center">
-                <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy.png">
-                <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy%202.png">
-            </div>
-
-            <p>
-                For transactions with more than two people, while Venmo currently only shows the amount per person and the total charge, I attempted to show the connection between 1) the amount per person that a user enters with the number pad and 2) the total amount of money that a user can expect to pay/receive, based on the total number of participants in the transaction.
-            </p>
-
-            <div align="center">
-                <img class="mobileScreen" src="venmo/buttons.png" style="box-shadow: none;">
-            </div>
-
-            <p>
-                Finally, I decided to create redundancy through visual cues for the Pay and Request buttons, which ideally will prevent users from accidentally hitting the wrong transaction type.
-            </p>
-
-            <div align="center">
-                <img class="mobileScreen" src="venmo/Paying.png">
-                <img class="mobileScreen" src="venmo/Paying%20Copy.png">
-            </div>
-
-            <p>
-                And from there… the transaction is done!
-            </p>
-
-            <h3>Takeaways</h3>
-
-            <ul>
-                <li>Redundancy isn’t always bad. In fact, it can be extremely helpful in encouraging users when their next actions depend heavily on key information.</li>
-                <li>The beauty in mobile payment apps like Venmo is their ability to expedite transactions. It takes a lot of coordination to move money between large groups of people, and a lot of good design to make even that process manageable.</li>
-            </ul>
-
-            <h3>Things I'm working on</h3>
-
-            <p>
-                While I have all the screen mockups and interface designs for the Pay / Request process, I’m also starting to think about the interaction design that will come into play (will the next screen slide in? Fade in? Slide out?). There’s an entirely separate space that will also help in users’ understanding, but definitely something that would help to determine the overall usability and effectiveness of this design!
-            </p>
-
-            <div class="footerImg" style="width: 100%; background-color: green; border: 50px 50px 0 0; ">
-                <img src="duolingo/header.png">
+                <img style="width:100%" src="duolingo/table.png">
             </div>
             
-            <p></p>
+            <h3>Other Materials</h3>
+            
+            If you're interested in seeing my product spec document and slide deck, PM me and I'll be happy to share it with you! 
+    
+            <h3>Takeaways</h3>
+            
+            <ul>
+                <li>Feature proposals based on improving user experience don't necessarily have to be different from feature proposals motivated by bettering the company - but when the two align, it's certainly much easier to justify that decision to allocate more resources.</li>
+                <li>One thing I learned in a lot of my talks and research is that more and more users are switching over to the Duolingo mobile app. In this case, how does modularity play a part? With even less screen space, how can we still optimize for user engagement?</li>
+            </ul>
+
+            
+            <p>&nbsp;</p>
+    
+            <p style="color: gray; opacity: .3; letter-spacing: 2pt;">&#9790 Made by Tiffany</p>
 
         </div>
 
