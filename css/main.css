@@ -89,6 +89,7 @@ a:hover, a:active {
     top: 0px; 
     right: 2%; 
     overflow: hidden; 
+    -ms-overflow-style: none;
     display: flex; 
     flex-direction: column; 
 /*    justify-content: center; */
@@ -98,6 +99,8 @@ a:hover, a:active {
 
 .scroll {
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: auto;
     max-width: none; 
     vertical-align: middle;
 
