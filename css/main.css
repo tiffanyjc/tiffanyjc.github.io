@@ -148,24 +148,24 @@ a:hover, a:active {
 }
 
 .stuff:nth-child(3) {
-    background-image: url('https://scontent.fewr1-1.fna.fbcdn.net/t31.0-8/11894004_1056638111015650_705003724819042970_o.jpg'); 
+    background-image: url('../pages/duolingo/main.png'); 
     background-size: cover; 
 /*    opacity: .9; */
 }
 
 .stuff:nth-child(4) {
-    background-image: url('http://watchdog.org/wp-content/blogs.dir/1/files/2015/01/Red-light.jpg'); 
+    background-image: url('../images/venmoFront.png'); 
     background-size: cover; 
 }
 
 .stuff:nth-child(5) {
-    background-image: url(../images/SF.png); 
+    background-image: url(../pages/cards/Design1BothFront.png); 
     background-size: cover; 
 /*    opacity: .9; */
 }
 
 .stuff:nth-child(6) {
-    background-image: url(../images/hab.png); 
+    background-image: url(../images/SF.png); 
     background-size: cover;
 /*    opacity: .9;*/
 }
@@ -466,4 +466,8 @@ a:hover, a:active {
     margin: 15px; 
     width: 45%; 
     min-width: 250px; 
+}
+
+.footerImg {
+    border-radius: 0px 0px 100px 0px; 
 }
