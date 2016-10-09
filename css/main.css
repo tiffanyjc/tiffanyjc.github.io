@@ -99,8 +99,7 @@ a:hover, a:active {
 
 .scroll {
     overflow-y: scroll;
-    -ms-overflow-style: none;
-    overflow: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     max-width: none; 
     vertical-align: middle;
 
