@@ -156,7 +156,7 @@ a:hover, a:active {
 }
 
 .stuff:nth-child(4) {
-    background-image: url('../images/venmoFront.png'); 
+    background-image: url('../images/venmoIcon.png'); 
     background-size: cover; 
 }
 
