@@ -352,6 +352,18 @@ a:hover, a:active {
 
 /*Side pages*/
 
+.summary {
+    font-size: 13px; 
+    line-height: 15px;
+    width: 75%; 
+}
+
+.summary b {
+    letter-spacing: 1px; 
+    color: #DB9D47; 
+    padding-right: 5px; 
+}
+
 
 .sectionBody, .sectionBody table {
     width: 78%; 
