@@ -1,0 +1,229 @@
+<head> 
+<link rel="stylesheet" type="text/css" href="sidepage.css">
+
+<title>Tiffany Chen</title>
+</head>
+
+<body> 
+
+
+    <div id="navcontainer"> 
+        <div id="intro-text">
+            <h1 id="intro-text">Hi, I'm <b>&nbsp;Tiffany&nbsp;</b></h1>
+        </div>
+
+<!--        <div id="nav">-->
+            <a href=""> &nbsp;</a>
+            <a href=""> &nbsp;</a>
+        <a href="index.html">Portfolio</a>
+        <a href="https://dribbble.com/tiffany-chen" target="_blank" id="dribbble">Dribbble</a>
+        <a href="https://www.behance.net/tiffanyjc" target="_blank" id="behance">Behance</a>
+        <a href="contact.html">Contact</a>
+
+<!--        </div>-->
+
+    </div>
+
+    <div id="preface"> 
+        <img id="topimg" src="duolingo.png"> 
+        
+<!--        <div id="project-info">-->
+            
+            <table id="info">
+                
+                <tr>
+                    <td class="table-label">||</td>
+                    <td class="table-value"><H1>DUOLINGO</H1></td>
+                </tr>
+                <tr>
+                    <td class="table-label">TYPE</td>
+                    <td class="table-value">Collaborative redesign</td>
+                </tr>
+                <tr>
+                    <td class="table-label">ROLE</td>
+                    <td class="table-value"> Research, interface / visual design, wireframes, 
+                        product spec. I had ownership over proposing and 
+                        redesigning features, with feedback from the 
+                        Duolingo team. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-label">TIMELINE</td>
+                    <td class="table-value">August - September 2016</td>
+                </tr>
+                
+                <tr>
+                
+                    <td class="table-label"> </td>
+                    <td class="table-value">
+                    
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+<!--
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+-->
+                        <h3>Motivation</h3>
+
+                        <p>
+                            As someone who grew up learning several different languages at once, I've always loved applications and platforms geared towards learning languages. 
+                        </p>
+
+                        <p>
+                            I actually began using Duolingo back when I was in seventh grade (yikes!), and it's incredible to see how far the company and product have come since then! 
+                        </p>
+
+                        <p>
+                            As a tribute to a product that I genuinely enjoy, I identified one area which I thought Duolingo could improve in, and took on both product manager and designer hats to address the issue. The final products included: 
+
+                        <ol>
+                            <li>A product spec</li>
+                            <li>High fidelity wireframes</li>
+                            <li>A slide deck for feature proposal</li>
+                        </ol>
+                </p>
+
+
+                <h3>Research</h3>
+
+                <p>
+                    I figured that the best way to begin looking for ways to improve Duolingo would be by checking to see what Duolingo users have historically liked and disliked. Some useful resources I found were the <a href="https://www.reddit.com/r/duolingo/" target="_blank">Duolingo subReddit</a> and <a href="https://www.duolingo.com/discussion" target="_blank">Duolingo Discussions center</a>. 
+                </p>
+
+                <div align="center">
+                    <img style="width:60%" src="duolingo/stats.png">
+                </div>
+
+                <p>
+                    Several interesting things I observed: 
+                <ul>
+                    <li>Luis, Duolingo's CEO, has a very strong presence in both online communities. He is also very responsive to feedback.</li>
+                    <li>There was a lot of push back against Duolingo's website redesign several years ago. Interestingly, the stats would indicate that users actually love it. Maybe sometimes people don't actually know what's good for them?</li>
+                    <li>Along a similar thread (although arguably unrelated to this writeup), I'm a huge fan of how Duolingo publishes all their findings on a blog. Definitely keeps the spirit of learning alive.</li>
+                </ul>
+                </p>
+
+
+        <h3>Identifiable Problems</h3>
+
+        <p>
+            Based on the research that I did, it was evident that - by all indicators - Duolingo is doing well; the number of users has increased, the number of types of users has increased, and the sheer amount of language courses offered on the platform is also significantly more than what it was several years ago. That being said (and as Luis himself has been quoted saying in many interviews), it's the number of daily active users there are, their engagement with Duolingo, and the amount of time they're spending that <i>actually</i> counts. 
+        </p>
+
+        <p>
+            From there, I decided that my problem would be a pretty broad - but extremely important one: how can we increase engagement on Duolingo? 
+        </p>
+
+
+        <h3>Design - Brainstorming</h3>
+
+        <p>
+            In design, there's a lot of emphasis on placing things "above the fold". A quick analysis of what was "above the fold" for Duolingo and what was "below the fold" on web showed the following: 
+        </p>
+
+        <div align="center">
+            <img style="width:80%" src="duolingo/fold.png">
+        </div>
+        <!--   --------IMAGE HERE------------>
+        <p>
+            In a nutshell, a lot of the modules that encourage users to engage in Duolingo (i.e. the strengthen skills button and the leadership board) aren't even visible when a user first loads the homepage. Additionally, because a user's most recently learned skill is always located at the very bottom of the long vertical homepage, it seems that the probability that a user will scroll quickly to the bottom of their screen - and thus miss the button and the module - is pretty high. 
+        </p>
+
+        <p>
+            To validate that my hypothesis was correct, I did an informal survey of some of my friends who I know use Duolingo. Their responses to my two questions were below: 
+        </p>
+
+        <div align="center">
+            <img style="width:80%" src="duolingo/hiddenSkills.png">
+        </div>
+
+        And this one:
+
+
+        <div align="center">
+            <img style="width:80%" src="duolingo/hiddenLeadership.png">
+        </div>
+
+
+        <p>
+            After more design feedback, brainstorming, bad mockups, and iterations, I finally came to a new feature proposal that I believed would increase user engagement and the daily amount of time a user spent on each of her languages. I call it the Duolingo Homepage 2.0! (A little lacking in creativity for the title, I'll admit...)
+        </p>
+
+        <div align="center">
+            <img style="width:100%" src="duolingo/compared.png">
+        </div>
+
+        <h3>Homepage 2.0</h3>
+
+
+        <p>
+            One of the biggest advantages to the current Duolingo homepage is, in my opinion, the modularity of it all. For the user, there's a clear plus with regards to being able to compartmentalize information and find everything that you need. On the engineering and product side, modularity makes it easy to break down tasks and try new things one at a time. 
+        </p>
+
+        <p>
+            My redesign attempts to preserve that modularity while still accounting for the "above the fold" mantra, essentially creating what looks like a dashboard for the gaming Duolingo user:
+        </p>
+
+        <div align="center">
+            <img style="width:100%" src="duolingo/modules.gif">
+        </div>  
+
+        <p>
+            Whereas before it took a lot of user effort to parse information when they were trying to locate specific course modules and skill sets, finding an old skill is now as easy as typing into the search bar and filtering down your results. In addition to the easier usabillity, I imagine this will increase user engagement with past skills and words that they have already learned. 
+        </p>
+
+
+        <div align="center">
+            <img style="width:100%" src="duolingo/search.gif">
+        </div>
+
+        <p>
+            I also redesigned the leadership board to be more visually demonstrative of a user's progress relative to his or her friends: 
+        </p>
+
+
+        <div align="center">
+            <img style="width:100%" src="duolingo/friends.gif">
+        </div>
+
+        Finally, I decided to examine the advantages of the Homepage 2.0 and compare them to the current homepage and its strengths: 
+
+
+        <div align="center">
+            <img style="width:100%" src="duolingo/table.png">
+        </div>
+
+        <h3>Other Materials</h3>
+
+        If you're interested in seeing my product spec document and slide deck, PM me and I'll be happy to share it with you! 
+
+        <h3>Takeaways</h3>
+
+        <ul>
+            <li>Feature proposals based on improving user experience don't necessarily have to be different from feature proposals motivated by bettering the company - but when the two align, it's certainly much easier to justify that decision to allocate more resources.</li>
+            <li>One thing I learned in a lot of my talks and research is that more and more users are switching over to the Duolingo mobile app. In this case, how does modularity play a part? With even less screen space, how can we still optimize for user engagement?</li>
+        </ul>
+
+
+        <p>&nbsp;</p>
+                    
+                    </td>
+                </tr>
+            
+            </table>
+            
+        
+        
+             
+            
+            <P></P>
+            
+            
+            <P></P>
+             
+<!--        </div>-->
+    </div>
+
+
+
+</body>
