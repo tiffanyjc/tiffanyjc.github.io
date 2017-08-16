@@ -66,6 +66,7 @@ h1 {
 #navcontainer a {
     padding-left: 60px;
     padding-right: 60px; 
+    color: black; 
 }
 
 a:active {
@@ -111,7 +112,9 @@ a:hover {
 }
 
 #info h1 {
-    font-size: 20px; 
+    font-size: 40px; 
+    font-weight: bold; 
+    padding-bottom: 20px; 
 }
 
 #info td {
@@ -129,7 +132,7 @@ a:hover {
 }
 
 #info img {
-    width: 100%; 
+    width: 110%; 
 }
 
 .mobilescreen {
