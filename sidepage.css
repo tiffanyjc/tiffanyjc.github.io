@@ -57,11 +57,15 @@ h1 {
 }
 
  a {
+    
+    text-decoration: none; 
+/*    color: black; */
+    font-weight: bold; 
+}
+
+#navcontainer a {
     padding-left: 60px;
     padding-right: 60px; 
-    text-decoration: none; 
-    color: black; 
-    font-weight: bold; 
 }
 
 a:active {
