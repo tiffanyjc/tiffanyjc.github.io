@@ -47,6 +47,10 @@ h1 {
     z-index: 5; 
 } 
 
+#intro-text {
+    padding-right: 217px; 
+}
+
 
 #nav {
     display: inline-block; 
