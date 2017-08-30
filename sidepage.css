@@ -98,5 +98,7 @@ li {
 
 .venmo img {
     max-width: 350px; 
-    width: 90%; 
+    width: 90%;    
+    padding-top: 15px; 
+    padding-bottom: 15px; 
 }
