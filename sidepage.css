@@ -104,8 +104,8 @@ li {
 }
 
 .duolingo img {
-    max-width: 550px; 
-    width: 120%;    
+    max-width: 550px !important; 
+    width: 120% !important;    
     padding-top: 15px; 
     padding-bottom: 15px; 
     
