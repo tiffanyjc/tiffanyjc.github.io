@@ -165,7 +165,11 @@ li {
 }
 
 
-.value a:link, a:visited {
-    color: white; 
-    background-color: black; 
+.content a:link, .content a:visited, .content a:active {
+    
+    color: blue; 
+}
+
+.content a:hover {
+    opacity: .3; 
 }
