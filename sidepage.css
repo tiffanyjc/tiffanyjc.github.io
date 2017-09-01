@@ -1,6 +1,7 @@
 body {
     font: 12pt Futura PT; 
     letter-spacing: .25px;
+    overflow-x: hidden; 
 }
 
 h3 {
@@ -109,4 +110,62 @@ li {
     padding-top: 15px; 
     padding-bottom: 15px; 
     
+}
+
+.microsoft img {
+    max-width: 550px !important; 
+    width: 100%;    
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+}
+
+.microsoft .personas {
+    max-width: none !important; 
+    width: 100vw !important; 
+    position: relative;
+    left: 60%;
+    right: 40%;
+    margin-left: -60vw;
+    margin-right: -40vw;
+    
+}
+
+.microsoft .hero {
+
+    max-width: none !important; 
+    width: 100vw !important; 
+    position: relative;
+    left: 62%;
+    right: 38%;
+    margin-left: -60vw;
+    margin-right: -40vw;
+}
+
+.microsoft .medImage {
+    min-width: 650px; 
+    width: 70vw !important; 
+    max-width: none !important; 
+    left: 30%; 
+    right: 70%; 
+    margin-left: -15vw !important; 
+    margin-right: -85vw !important;
+}
+
+.imageGrid {
+    max-width: none !important; 
+    width: 100vw !important; 
+    position: relative;
+    left: 60%;
+    right: 40%;
+    margin-left: -55vw;
+    margin-right: -45vw;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+}
+
+
+.value a:link, a:visited {
+    color: white; 
+    background-color: black; 
 }
