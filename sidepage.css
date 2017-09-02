@@ -105,15 +105,15 @@ li {
 }
 
 .duolingo img {
-    max-width: 550px !important; 
-    width: 120% !important;    
+    max-width: 550px ; 
+    width: 100%;    
     padding-top: 15px; 
     padding-bottom: 15px; 
     
 }
 
 .microsoft img {
-    max-width: 550px !important; 
+    max-width: 550px ; 
     width: 100%;    
     padding-top: 15px; 
     padding-bottom: 15px; 
@@ -130,7 +130,7 @@ li {
     
 }
 
-.microsoft .hero {
+.hero {
 
     max-width: none !important; 
     width: 100vw !important; 
@@ -141,7 +141,7 @@ li {
     margin-right: -40vw;
 }
 
-.microsoft .medImage {
+.medImage {
     min-width: 650px; 
     width: 70vw !important; 
     max-width: none !important; 

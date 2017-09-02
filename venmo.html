@@ -137,10 +137,13 @@
                         I began by doing a quick redesign for Venmo’s newsfeed (while adhering to their style guide) in order to 1) get a feel for how I would want the rest of the redesign to visually look 2) practice displaying important information without users having to click anything and 3) implement 1 and 2 while still preserving modularity.
                     </p>
 
+                    <p>&nbsp;</p>
+                    
                     <div align="center">
                         <img class="mobileScreen" src="venmo/Newsfeed.png">
                     </div>
 
+                    <p>&nbsp;</p>
 
                     <p>
                         Based on my own experiences and what I’ve heard from talking to peers, it’s always important to know how much money is in your Venmo account right from the get-go (should I transfer it back into my bank account? Will my next payment be using my Venmo money or will it also draw from my bank account?).
@@ -150,18 +153,29 @@
                         From there, I thought about ways to make the process of selecting transaction participants more intuitive.
                     </p>
 
+                    <p>&nbsp;</p>
                     <div align="center">
                         <img class="mobileScreen" src="venmo/Pay/Charge%201.png">
                     </div>
 
+                    <p>&nbsp;</p>
                     <p>
                         The advantage of the current selection process includes categorization of people (the users with whom you have the most extensive transaction history with will appear first in the search bar). I decided to preserve this in my redesign, while also adding in some more visual design to show when a user had been selected to be a participant in the transaction.
                     </p>
+                    <p>&nbsp;</p>
 
-                    <div align="center">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%202%20Type.png" style="float: left; ">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%202.png" style="float: right; ">
-                    </div>
+                    
+                    <div class="imageGrid" align="center"> 
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%202%20Type.png" style="float: right; ">   
+                        </div>
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%202.png" style="float: left; ">
+                        </div>
+                    </div> 
+                    
+                    
+                    <p>&nbsp;</p>
 
                     <p>
                         Fun fact: seems like there’s also a bug in Venmo where if you try to send money to someone with the same name as you, the Done button doesn’t appear!
@@ -171,46 +185,75 @@
                         For the transaction screen, in addition to having the description bar active by default, I decided to include users’ profile pictures in addition to their usernames in addition to their full names. While there are certainly times when redundancy is… redundant, I figured (based on conversations with friends) that the different bits of information (i.e. name, profile picture, and username) would be able to independently validate that the user selected the correct participant, and consequently put together they would make the user feel extremely secure in sending money (this is what I imagine will increase the conversion rate from initiating a transaction to completing a transaction!).
                     </p>
 
-                    <div align="center">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%203.png" style="float: left; ">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group.png" style="float: right; ">
-                    </div>
+                    
+                    <div class="imageGrid" align="center"> 
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%203.png" style="float: right; " >
+                            
+                        </div>
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group.png" style="float: left; "> 
+                        </div>
+                    </div> 
 
+                    <p>&nbsp;</p>
                     <p>
                         The con to all of this is that with many, many participants in a transaction, there will be the issue of space and information overload. While this may certainly be a problem, I attempt to navigate around it by creating a horizontally scrolling participants list, which will keep the user on the transaction screen but still allow them to view every participant’s information.
                     </p>
+                    <p>&nbsp;</p>
+                    
+                    <div class="imageGrid" align="center"> 
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%204.png" style="float: right; ">
 
-                    <div align="center">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%204.png" style="float: left; ">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%205.png" style="float: right">
-                    </div>
+                        </div>
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%205.png" style="float: left; ">
+                        </div>
+                    </div> 
+                    
+                    <p>&nbsp;</p>
+
 
                     <p>
                         For a transaction between two people, it was easy enough to create an intuitive, modular flow that clearly showed the amount of money to be exchanged.
                     </p>
+                    
+                    <div class="imageGrid" align="center"> 
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy.png" style="float: right; ">
 
-                    <div align="center">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy.png" style="float: left; ">
-                        <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy%202.png" style="float: right; ">
-                    </div>
+                        </div>
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Pay/Charge%203%20Group%20Copy%202.png" style="float: left; ">
+                        </div>
+                    </div> 
 
+                    <p>&nbsp;</p>
                     <p>
                         For transactions with more than two people, while Venmo currently only shows the amount per person and the total charge, I attempted to show the connection between 1) the amount per person that a user enters with the number pad and 2) the total amount of money that a user can expect to pay/receive, based on the total number of participants in the transaction.
                     </p>
-
                     <div align="center">
                         <img class="mobileScreen" src="venmo/buttons.png" style="box-shadow: none;">
                     </div>
+                    <p>&nbsp;</p>
 
                     <p>
                         Finally, I decided to create redundancy through visual cues for the Pay and Request buttons, which ideally will prevent users from accidentally hitting the wrong transaction type.
                     </p>
+                    <p>&nbsp;</p>
+                    
+                    <div class="imageGrid" align="center"> 
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Paying.png" style="float: right; ">
 
-                    <div align="center">
-                        <img class="mobileScreen" src="venmo/Paying.png" style="float: left; ">
-                        <img class="mobileScreen" src="venmo/Paying%20Copy.png" style="float: right; ">
-                    </div>
+                        </div>
+                        <div class="col-md-6"> 
+                            <img class="mobileScreen" src="venmo/Paying%20Copy.png" style="float: left; ">
+                        </div>
+                    </div> 
 
+                    <p>&nbsp;</p>
                     <p>
                         And from there… the transaction is done!
                     </p>
