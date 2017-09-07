@@ -119,6 +119,14 @@ li {
     padding-bottom: 15px; 
 }
 
+.cats img {
+    max-width: 550px ; 
+    width: 100%;    
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+
+}
+
 .microsoft .personas {
     max-width: none !important; 
     width: 100vw !important; 
@@ -131,7 +139,6 @@ li {
 }
 
 .hero {
-
     max-width: none !important; 
     width: 100vw !important; 
     position: relative;
