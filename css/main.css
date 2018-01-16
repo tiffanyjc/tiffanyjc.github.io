@@ -143,6 +143,10 @@ body {
     
 }
 
+.item-title {
+    text-decoration: underline; 
+}
+
 .item p {
     display: none; 
 }
