@@ -1,0 +1,150 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/side.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tiffany's Digital Art</title>
+</head>
+<body>
+
+    <div id="nav"> 
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        
+    </div>
+    
+    <div class="section">
+        <h3>Digital Art</h3>
+        <p>
+            Here's a selection of my digital art! I primarily use Illustrator (I'm a vector and shapes person) when I'm conceptualizing ideas and drawing, and then I'll take them into Indesign if I need to add any typographical elements. Lately, I've been trying to push myself out of my comfort zone by using Photoshop and Procreate. 
+        </p>
+        <p>
+            I've made digital illustrations for my <a href="https://www.kickstarter.com/projects/tiffanyjc/crazy-cat-stickers-pillows-and-totes" target="_blank">cat Kickstarter project</a>, which ended up being printed on pillows, totes, stickers, and calendars:
+        </p>
+        
+    </div>
+    
+    <div class="flex-section">
+        <img src="art-digital/cats.png" class="medImage">
+        <img src="art-digital/cats2.png">
+    </div>
+    
+    <div class="section">
+        <p>
+            For my RISD class "What's your Story?", I created a series of three illustrations to accompany the novel Fahrenheit 451 by Ray Bradbury. In these illustrations, I focused on color, lighting, and shape combined with typography and typesetting to convey the mood and emotions from each scene:
+
+        </p>
+        <p>&nbsp;</p>
+        
+    </div>
+    
+    <img src="art-digital/f4511.png" class="hero">
+    <img src="art-digital/f4512.png" class="hero">
+    <img src="art-digital/f4513.png" class="hero">
+    
+    <div class="section">
+        <p>
+            Here's a simple full-page spread of a young girl and her giraffe friend that focuses on character design and the relationship between characters:
+
+        </p>
+        <p>&nbsp;</p>
+
+    </div>
+    <img src="art-digital/giraffe.png" class="hero">
+    
+    <div class="section">
+        <p>
+            My boyfriend really likes koi, so I drew him a lot of koi for Christmas:
+
+        </p>
+        <p>&nbsp;</p>
+
+    </div>
+    
+    <img src="art-digital/koi.jpeg" class="hero">
+    
+    <div class="section">
+        <p>
+            I also illustrated stories from people's lives in my online series <a href="www.tiffanyc.me/storiesbook" target="_blank">Storiesbook</a>:
+
+        </p>
+        <p>&nbsp;</p>
+
+    </div>
+    
+    <img src="art-digital/storiesbook.png">
+    
+    <div class="section">
+        <p>
+            Finally, here's how I had always imagined the infamous Naked Donut Run at Brown happening prior to actually witnessing it: 
+
+        </p>
+        <p>&nbsp;</p>
+
+    </div>
+    
+    <div class="flex-section">
+        <img src="art-digital/ndr0.png">
+        <img src="art-digital/ndr1.png">
+
+    </div>
+
+    
+<div class="section">
+    
+    
+</div>
+    
+<!--    <img class="surprise" id="surprise1" src="images/surprises/surprise1-01.png"> -->
+    
+    <div id="footer"> 
+        I do art and design and dev commissions! Feel free to <a href="mailto:tiffanyc1225@gmail.com">email me</a>. :) 
+        <p>
+            Copyright &copy; Tiffany Chen 2018
+        </p>
+        
+        <p>
+            <a href="https://www.facebook.com/tiffjchen">FB</a> | 
+            <a href="www.linkedin.com/in/tiffanyjchen">LinkedIn</a> | 
+            <a href="https://dribbble.com/tiffany-chen">Dribbble</a>
+        </p>
+        
+    </div>
+        
+
+</body>
+
+
+<script> 
+    window.addEventListener("scroll", function() {
+        var topDistance = window.pageYOffset; 
+        var layers = ["16"]; 
+
+        for (l in layers) { 
+            var layer = document.getElementById(layers[l]); 
+
+            // all test stuff 
+            var layerTop = layer.offsetTop; 
+            var story = parseInt(layers[l].charAt(0)); 
+            var scrollStart = (story - 1) * window.innerHeight; 
+            var scrollEnd = scrollStart + window.innerHeight; 
+
+            if (topDistance >= scrollStart && topDistance < scrollEnd) {
+                var depth = layer.dataset.depth; 
+                var movement = -((topDistance - scrollStart) * depth); 
+                var translate3d = 'translate3d(0, ' + movement + 'px, 0)'
+                layer.style.webkitTransform = translate3d; 
+                layer.style.mozTransform = translate3d; 
+                layer.transform = translate3d; 
+            }
+
+
+
+        }
+    });
+
+
+</script>

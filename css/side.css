@@ -1,0 +1,82 @@
+body p {
+    margin-bottom: 30px; 
+}
+
+body img {
+    width: 80%; 
+    position: relative; 
+    left: 10%; 
+}
+
+
+.hero {
+    width: 100%;  
+    position: relative; 
+    left: 0%; 
+}
+
+#text-description {
+    font-size: 14px; 
+    line-height: 28px; 
+}
+
+#text-description a {
+    padding: 0px; 
+    color: #DB4546; 
+}
+
+.section img {
+    width: 100%; 
+}
+
+.section a, .section a:link, .section a:active, .section a:visited {
+    padding: 0px; 
+    text-decoration: underline; 
+}
+
+.imageGrid img {
+    width: 50%;    
+}
+
+.flex-section {
+    display: flex; 
+    flex-direction: row; 
+    width: 80%; 
+    height: 500px; 
+}
+
+.flex-section img {
+    object-fit: scale-down; 
+    width: 50%; 
+}
+
+
+/*full screen */
+@media only screen and (min-width: 500px) {
+    body img {
+        width: 65%; 
+        position: relative; 
+        left: 0%; 
+    }
+    
+    .imageGrid {
+        display: flex; 
+        flex-direction: row; 
+        height: 200px; 
+    }
+    
+    .imageGrid img {
+        object-fit: contain; 
+        padding: 10px; 
+        
+    }
+    .sideimg {
+        width: 30% !important; 
+    }
+    
+    
+    .section {
+        max-width: 550px; 
+    }
+        
+}

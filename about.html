@@ -1,0 +1,117 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/side.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>About Tiffany</title>
+</head>
+<body>
+
+    <div id="nav"> 
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        
+    </div>
+    
+    <div id="header">
+        
+<!--         trying parallax stuff here-->
+            <div class="parallax animated fadeIn">
+                
+                <div id="16" class="parallax__layer" data-type="parallax" data-depth=".1">
+                    <img src="about/feature-image/feature-image1.svg"></div>
+
+<!--
+                <div id="15" class="parallax__layer" data-type="parallax" data-depth=".6">
+                     <img src="../memory-water/earlymemory-water5-01.png"></div>
+
+                <div id="14" class="parallax__layer" data-type="parallax" data-depth=".3">
+                    <img src="../memory-water/earlymemory-water4-01.png">
+                </div>
+                
+                <div id="13" class="parallax__layer" data-type="parallax" data-depth=".5">
+                    <img src="../memory-water/earlymemory-water3-01.png">
+                </div>
+                <div id="12" class="parallax__layer" data-type="parallax" data-depth=".8">
+                    <img src="../memory-water/earlymemory-water2-01.png">
+                </div>
+                
+                <img src="../memory-water/earlymemory-water1-01.png" id="11" class="parallax__layer" data-type="parallax" data-depth="1">
+-->
+                
+
+            </div>
+        
+<!--        end parallax -->
+        
+        <div id="text">
+            <div id="text-intro" class="animated slideInDown">
+                <p>Hi, I'm</p>
+                <p><b><u>Tiffany Chen</u></b></p>
+            </div>
+            <div id="text-description" class="animated slideInRight">
+                I’m a (self-taught) UX designer and illustrator, a senior at Brown University, and a HUGE Doctor Who fan. 
+                <br />
+                <br />
+               I'm really interested in the intersection of technology, design, and accessibility, but I also spend my time trying to figure out how to combine my love for the arts with my education in Computer Science. Most recently, I was working on <a href="tiffanyc.me/storiesbook">Storiesbook</a> and am now working on creating a modern "Mah" Jong set. 
+                <br />
+                <br />
+                During my time at Brown, I've been involved in both the design and logistics teams for <a href="www.2018.hackatbrown.org" target="_blank">Hack@Brown</a>, attended the Grace Hopper 2018 conference as a <a href="https://cs.brown.edu/news/2017/06/06/tiffany-chen-has-been-named-women-techmakers-scholar/">Google Women Techmakers Scholar</a>, and served as a <a href="http://www.browndailyherald.com/2016/11/01/tiffany-chen-18-awarded-changemaker-fellowship/">Rhode Island Changemaker 2017 Fellow</a> for social ventures in the state.
+                <br />
+                <br />
+                Feel free to <a href="mailto:tiffanyc1225@gmail.com" target="_blank">email me</a> if you want to chat! 
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="footer"> 
+        I do art and design and dev commissions! Feel free to <a href="mailto:tiffanyc1225@gmail.com">email me</a>. :) 
+        <p>
+            Copyright &copy; Tiffany Chen 2018
+        </p>
+        <p>
+            <a href="https://www.facebook.com/tiffjchen">FB</a> | 
+            <a href="www.linkedin.com/in/tiffanyjchen">LinkedIn</a> | 
+            <a href="https://dribbble.com/tiffany-chen">Dribbble</a>
+        </p>
+        
+    </div>
+        
+
+</body>
+
+
+<script> 
+    window.addEventListener("scroll", function() {
+        var topDistance = window.pageYOffset; 
+        var layers = ["16"]; 
+
+        for (l in layers) { 
+            var layer = document.getElementById(layers[l]); 
+
+            // all test stuff 
+            var layerTop = layer.offsetTop; 
+            var story = parseInt(layers[l].charAt(0)); 
+            var scrollStart = (story - 1) * window.innerHeight; 
+            var scrollEnd = scrollStart + window.innerHeight; 
+
+            if (topDistance >= scrollStart && topDistance < scrollEnd) {
+                var depth = layer.dataset.depth; 
+                var movement = -((topDistance - scrollStart) * depth); 
+                var translate3d = 'translate3d(0, ' + movement + 'px, 0)'
+                layer.style.webkitTransform = translate3d; 
+                layer.style.mozTransform = translate3d; 
+                layer.transform = translate3d; 
+            }
+
+
+
+        }
+    });
+
+
+</script>
