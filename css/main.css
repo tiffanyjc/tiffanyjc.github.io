@@ -54,6 +54,10 @@ body {
     left: 5%; 
 }
 
+#text-description a {
+    margin: 0px; 
+}
+
 #text-intro b {
     font: 48px Palatino; 
     font-weight: bold; 
