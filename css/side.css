@@ -2,6 +2,11 @@ body p {
     margin-bottom: 30px; 
 }
 
+.parallax__layer img {
+    position: absolute; 
+    left: 0px; 
+}
+
 body img {
     width: 80%; 
     position: relative; 
