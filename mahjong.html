@@ -1,0 +1,80 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/side.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mah Jong</title>
+</head>
+<body>
+
+    <div id="nav"> 
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        
+    </div>
+    
+    <div class="section">
+        <h3>This project is in the works :) </h3>
+     
+    </div>
+
+       
+    
+   
+    
+
+    
+    
+ 
+    
+<!--    <img class="surprise" id="surprise1" src="images/surprises/surprise1-01.png"> -->
+    
+    <div id="footer"> 
+        I do art and design and dev commissions! Feel free to <a href="mailto:tiffanyc1225@gmail.com">email me</a>. :) 
+        <p>
+            Copyright &copy; Tiffany Chen 2018
+        </p>
+        <p>
+            <a href="https://www.facebook.com/tiffjchen">FB</a> | 
+            <a href="www.linkedin.com/in/tiffanyjchen">LinkedIn</a> | 
+            <a href="https://dribbble.com/tiffany-chen">Dribbble</a>
+        </p>
+    </div>
+        
+
+</body>
+
+
+<script> 
+    window.addEventListener("scroll", function() {
+        var topDistance = window.pageYOffset; 
+        var layers = ["16"]; 
+
+        for (l in layers) { 
+            var layer = document.getElementById(layers[l]); 
+
+            // all test stuff 
+            var layerTop = layer.offsetTop; 
+            var story = parseInt(layers[l].charAt(0)); 
+            var scrollStart = (story - 1) * window.innerHeight; 
+            var scrollEnd = scrollStart + window.innerHeight; 
+
+            if (topDistance >= scrollStart && topDistance < scrollEnd) {
+                var depth = layer.dataset.depth; 
+                var movement = -((topDistance - scrollStart) * depth); 
+                var translate3d = 'translate3d(0, ' + movement + 'px, 0)'
+                layer.style.webkitTransform = translate3d; 
+                layer.style.mozTransform = translate3d; 
+                layer.transform = translate3d; 
+            }
+
+
+
+        }
+    });
+
+
+</script>
