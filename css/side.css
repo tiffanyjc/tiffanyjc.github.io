@@ -58,7 +58,13 @@ body img {
 
 
 .imageGrid img {
-    width: 50%;    
+    width: 100%; 
+    padding-bottom: 20px; 
+    left: 0; 
+}
+
+.imageGrid {
+    margin: 0px; 
 }
 
 .flex-section {
@@ -89,13 +95,21 @@ body img {
     
     .imageGrid {
         display: flex; 
-        flex-direction: row; 
-        height: 200px; 
+        flex-direction: row !important; 
+        flex-wrap: wrap; 
+        width: 100%; 
+        justify-content: center; 
+/*        height: 200px; */
     }
     
     .imageGrid img {
-        object-fit: contain; 
+/*        object-fit: contain; */
         padding: 10px; 
+        padding-top: 0px; 
+        padding-bottom: 20px; 
+        margin: 0px; 
+        width: 40%; 
+        align-self: center; 
         
     }
     .sideimg {
