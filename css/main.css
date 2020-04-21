@@ -1,32 +1,8 @@
-#nav a, a:link, a:visited, a:active {
-    color: black;
-    text-decoration: none; 
-    margin-left: 40px; 
-    margin-right: 40px; 
-}
-    
-#nav a:hover {
-    opacity: .5; 
-}
-
-#nav {
-    height: 50px; 
-    width: 100vw; 
-    text-align: right; 
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    background-color: rgba(255, 255, 255, .9); 
-    z-index: 2; 
-}
 
 body {
     margin: 0px; 
-    font: 15px Arial; 
-    line-height: 33px; 
+    font: 24px Arial; 
+    line-height: 35px; 
     text-decoration-skip: ink;
     text-underline-position: alphabetic; 
     background-color: white; 
@@ -34,33 +10,6 @@ body {
 
 #text {
     z-index: 4; 
-}
-
-#text-intro {
-    font: 16px Palatino; 
-    line-height: 3xpt;
-    font-weight: bold; 
-    margin-top: 40px; 
-    margin-bottom: 40px; 
-    width: 90%; 
-    position: relative; 
-    left: 5%; 
-    text-align: left; 
-}
-
-#text-description {
-    width: 90%; 
-    position: relative; 
-    left: 5%; 
-}
-
-#text-description a {
-    margin: 0px; 
-}
-
-#text-intro b {
-    font: 48px Palatino; 
-    font-weight: bold; 
 }
 
 #footer a {
@@ -73,160 +22,15 @@ body {
     position: relative;
     max-width: 888px !important;
 }
-.parallax {
-    width: 100%; 
-/*    height: 550px;*/
-    height: calc(100vw * 600/467 + 50px); 
-    position: relative;
-    top: 50px;
-    z-index: 3; 
-}
 
-.parallax__layer {
-    background-size:contain; 
-    background-repeat: no-repeat; 
-    width: 100vw; 
-    position: absolute;
-    /*    z-index: -1; */
-}
-
-.parallax__layer img {
-    width: 100%; 
-}
-
-
-.section {
-    margin-top: 90px; 
-}
-
-.section-case a, .section-case a:link, .section-case a:active, .section-case a:visited, .section-case a:hover {
-    padding: 0px; 
-}
-
-.section-title {
-    font: 16px Palatino; 
-    font-weight: bold; 
-    letter-spacing: .1px; 
-    position:relative; 
-    width: 90%; 
-    left: 5%; 
-}
-
-.item {
-    width: 100vw; 
-    height: 100vw;
-    
-    min-width: 250px; 
-    min-height: 250px; 
-    
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end; 
-    
-    margin-top: 40px; 
-    margin-bottom: 40px; 
-    position: relative;
-    overflow: hidden;
-}
-
-
-.item h1, .item-title {
-    font: 24px Palatino; 
-/*    line-height: 32px; */
-    letter-spacing: .3px; 
-    transition: all .4s;
-    position: relative; 
-    left: 5%; 
-    width: 90%; 
-    z-index: 3; 
-    margin-bottom: 50px; 
-    
-}
-
-.item-title {
-    text-decoration: underline; 
-}
-
-.item p {
-    display: none; 
-}
-
-
-.item-image {
-    width: 100%; 
-    height: 100%; 
-    background-image: url('../images/features/microsoft-01.png') ; 
-    background-size: 100%; 
-    background-repeat: no-repeat; 
-    
-    position: absolute; 
-    top: 0px; 
-    transition: all .4s; 
-    
-}
-
-#adobe {
-    background-image: url('../images/features/adobe-01.png') ; 
-}
-
-#duolingo {
-    background-image: url('../images/features/duolingo-01.png'); 
-}
-
-#storiesbook {
-    background-image: url('../images/features/storiesbook.png') ; 
-    background-size: cover; 
-    background-position: bottom right; 
-}
-
-#cats {
-    background-image: url('../images/features/cats.png'); 
-}
-
-#design-summer {
-    background-image: url('../images/features/ds.png') ; 
-}
-
-#digital {
-    background-image: url('../images/features/digital.jpg') ; 
-    background-size: cover; 
-    background-position: center; 
-}
-
-#watercolor {
-    background-image: url('../images/features/watercolor.jpg'); 
-    background-size: cover; 
-    background-position: bottom; 
-}
-
-#sketches {
-    background-image: url('../art-products/pillow.png') ; 
-    background-size: cover; 
-    background-position: center; 
-}
-
-.item:hover .item-image {
-    /*    opacity: .5; */
-    -webkit-transform: scale(1.2); 
-/*    opacity: .1; */
-    transition: all .4s; 
-}
-
-.item:hover .item-image, .item:focus .item-image {
-    display: block;
-}
-
-:hover .item-title {
-    padding-left: 15px;
-    transition: all .4s; 
-}
 
 
 #footer {
     margin-top: 100px; 
-    width: 100%; 
+    width: 80%; 
+    left: 10%; 
     height: 250px; 
-    text-align: center; 
+    /* text-align: center;  */
     opacity: .5; 
 }
 
@@ -265,111 +69,16 @@ body {
         width: 80%; 
         left: 10%; 
         top: 40px; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
     }
     
     #text {
         width: 750px; 
     }
     
-    #text-intro {
-        text-align: center; 
-        position: relative; 
-        left: -103px; 
-/*        -webkit-animation-delay: 1s; */
-        -webkit-animation-duration: 1s; 
-        -moz-animation-duration: 1s; 
-    }
-    
-    #text-description {
-       padding-left: 36px;  
-        line-height: 33px; 
-/*        -webkit-animation-delay: 1s; */
-        -webkit-animation-duration: 1s; 
-        -moz-animation-duration: 1s; 
-    }
-    
-    #parallax {
-        width: 433px; 
-        height: 550px !important;
-        -webkit-animation-duration: 3s; 
-        -moz-animation-duration: 3s; 
-    }
-    
-    .parallax__layer {
-        width: 433px; 
-        height: 550px;
-/*        -webkit-animation-duration: 2s; */
-    }
-    
-
-    .section-case {
-        display: flex; 
-        justify-content: space-between; 
-        flex-wrap: wrap; 
-    }
-    
-    .section-case a, .section-case a:link, .section-case a:active, .section-case a:visited, .section-case a:hover {
-        padding: 0px; 
-        margin: 0px; 
-    }
-
-    
-    .section-title {
-        position:relative; 
-        width: 100%; 
-        left: 0%; 
-    }
-    
-    .section {
-        position: relative;
-        width: 80%; 
-        left: 10%;
-        max-width: 910px;
-    }
-    
-    .item {
-        width: 250px; 
-        height: 250px; 
-    }
-    
-    .item h1 {
-        position: relative; 
-        left: 0% !important; 
-    }
-    
-    #section1 {
-        top: 50px; 
-    }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1100px) {
-    
-    #text-intro {
-        text-align: left; 
-        left: 0px;
-    }
-    .parallax__layer {
-        width: 80%; 
-        min-width: 185px;
-        height: auto ;
-    }
-    
-    .parallax {
-        height: 550px !important; 
-    }
-    .item h1 {
-        position: relative; 
-        left: 0% !important; 
-    }
 
-}
 @media only screen and (min-width: 1101px) {
-    .parallax {
-        height: 550px !important; 
-    }
     
     body {
         display: flex; 
@@ -377,17 +86,10 @@ body {
         align-items: center; 
     }
     
-    .section {
-        left: 0%; 
-    }
     
     #header {
         left: 0%; 
         padding-bottom: 70px; 
-    }
-    .item h1 {
-        position: relative; 
-        left: 0% !important; 
     }
     
 }
