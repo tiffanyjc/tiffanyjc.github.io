@@ -1,31 +1,98 @@
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="css/hover-min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
-    <title>Tiffany Chen</title>
-    
-</head>
-<body>
-    
-    <div id="header">
-        I am a designer, illustrator, developer, and embarrassed that my portfolio is out-of-date. While I refresh it, please reach out if you'd like to see what I've been up to. <Br />I promise it's interesting!
+<!-- Just an FYI that this portfolio  is still a work in progress :) 
+Content aside, the principles I'm hoping to follow are: 
 
-        <p>
-            <a href="http://www.linkedin.com/in/tiffanyjchen" target="_blank">LinkedIn</a> <br />
-            <a href="https://instagram.com/tiffanychenart" target="_blank">Instagram</a><br />
-            <a href="https://etsy.com/shop/tiffanychenart" target="_blank">Etsy</a><br />
-            <a href="mailto:totiffanychen@gmail.com" target="_blank">Email</a> <br />
-        </p>
+1. Accessible - for people using assistive tech, for language learners, and for folks on low-tech devices
+
+2. Enduring - trying to just use common fonts and vanilla HTML / CSS / JS for the most part, so there isn't the need for much upkeep in the future.
+-->
+
+<!doctype html>
+<html class="light">
+  <head>
+    <title>Tiffany Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Tiffany Chen">
+    <meta name="description" content="Tiffany's work-in-progress portfolio">
+    <meta charset="utf-8">
+    <!-- <meta property="og:url" content="http://tiffanyc.cc"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tiffany Chen">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header class="light">
+        <div id="nav">
+            <a href=""><b>Tiffany Chen</b></a> 
+        </div>
         
+        <div id="settings">
+            <!-- <a href="">About</a>
+            <a href="">Work</a> -->
+            <span id="theme"><i id="theme-icon" class="fas fa-moon light"></i></span>
+        </div>
+        
+    </header>
+
+    <img id="prof" src="assets/profile-image.png"> 
+
+    <div id="content" class="light">
+
+        <div id="hello">
+            <p>Hello!! I’m a designer by practice, illustrator by night, developer by education, and generally just a person hoping to affect positive social change through the things that I do. </p>
+        </div>
+
+       
+        <div id="resume-section">
+            <div id="work" class="resume-section">
+                <h2>Work</h2>
+                <p>Currently working on input & accessibility for Windows; exploring how alternative input and multimodality unlock access for users with disabilities.</p>
+                <p>Previously worked on Microsoft's <a href="https://www.microsoft.com/design/inclusive/" target="_blank">Inclusive Design methodology</a>, including reexamining the <a href="https://medium.com/microsoft-design/kill-your-personas-1c332d4908cc" target="_blank">value of personas</a> in the design practice.</p>
+                <div class="spacing"></div>
+            
+                <h2>Personal</h2>
+                <p>I've designed and developed <a href="https://www.figma.com/community/plugin/731310036968334777/A11y---Focus-Orderer" target="_blank">several</a> <a href="https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker" target="_blank">accessibility</a> <a href="https://www.figma.com/community/plugin/731316515732442555/Keyboard-Scrolling" target="_blank">plugins</a> to help optimize the way designers check for accessibility. </p>
+                <p>I run a <a href="https://www.etsy.com/shop/tiffanychenart" target="_blank">small shop </a> that features my explorations in digital and traditional art.</p>
+                <div class="spacing"></div>
+            </div>
+
+            <div id="speaking" class="resume-section">
+                <h2>Speaking</h2>
+                <p>I've guest lectured at Seattle University, Emily Carr, and Brown University.</p>
+
+                <p>I've been a panelist for  <a href="https://www.youtube.com/watch?v=a6Y6NGQKfo8" target="_blank">IBM Accessibility</a> and  <a href="https://thinkercyze.com/challenges/06-accessiblesidewalks" target="_blank">Seattle Design Festival</a>.</p>
+
+                <p>I demoed at the <a href="https://www.figma.com/blog/behind-the-plugins-tiffany-chen-microsoft/" target="_blank">Figma Plugin launch</a> and had planned to speak at CSUN Assistive Technology 2020 (RIP COVID).</p>
+
+            </div>
+
+        </div>
     </div>
     
-    <img class="surprise" id="surprise1" src="images/surprises/surprise1-01.png"> 
-    
-        
 
-</body>
+    <footer >
+        <div id="social" class="light">
+            <hr>
+            <a href="https://twitter.com/itstiffanychen"><i class="fab fa-twitter"></i></a> 
+            <a href="https://www.linkedin.com/in/tiffanyjchen/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tiffanyjc"><i class="fab fa-github"></i></a>
+            <a href="mailto:totiffanychen@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
 
+
+  </body>
+  <script>
+      document.getElementById('theme').addEventListener("click", () => {
+        document.getElementById("theme-icon").classList.toggle("fa-moon");
+        document.getElementById("theme-icon").classList.toggle("fa-sun"); 
+        document.getElementById("theme-icon").classList.toggle("light");
+
+
+        document.querySelector("html").classList.toggle("light"); 
+        document.querySelector("header").classList.toggle("light"); 
+      }); 
+  </script>
+  
+</html>
