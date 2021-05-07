@@ -18,14 +18,13 @@ var modal = document.getElementById("myModal");
 
 $('img').each(function() {
   $(this).click(function(src) {
-    console.log(this.src); 
-    
     modal.style.display = "flex"; 
     modalImg[0].src = this.src; 
   })
 });
 
 // When the user clicks on <span> (x), close the modal
+
 function closeModal() {
   document.getElementById("myModal").style.display = "none"; 
 }

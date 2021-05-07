@@ -6,7 +6,7 @@
     flex-wrap: wrap; 
     width: 75vw; 
     max-width: none; 
-    z-index: 899; 
+    z-index: 998; 
 }
 
 .image-gallery img:hover {
@@ -40,7 +40,7 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 998; /* Sit on top */
+    z-index: 999; /* Sit on top */
     left: 0;
     top: 0;
     width: 100vw; /* Full width */
