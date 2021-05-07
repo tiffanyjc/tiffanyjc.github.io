@@ -47,7 +47,7 @@ h2 {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     left: 0px; 
     top: 0px; 
     width: calc(100vw - 32px);
@@ -86,11 +86,11 @@ header a, #social a{
     padding-right: 8px; 
 }
 
-header.light a:focus, #social.light a:focus, #content.light a:focus {
+header.light a:focus, #social.light a:focus, .content.light a:focus {
     outline-color: var(--dark-primary);
 }
 
-header a:focus, #social a:focus, #content a:focus {
+header a:focus, #social a:focus, .content a:focus {
     outline-color: var(--light-primary);
     padding: 4px; 
     -webkit-transition: all .15s ease-in-out;
@@ -120,7 +120,7 @@ header a:focus, #social a:focus, #content a:focus {
         padding: 0px; 
     }
 
-#content {
+.content {
     margin-top: 64px; 
     padding: 0px 16px;        
     display: flex; 
@@ -130,7 +130,7 @@ header a:focus, #social a:focus, #content a:focus {
     max-width: 700px; 
 }
 
-    #content a {
+    .content a {
         text-decoration: underline; 
         text-decoration-skip: ink; 
         color: var(--dark-primary);
@@ -153,7 +153,6 @@ header a:focus, #social a:focus, #content a:focus {
 
 footer {
     width: calc(100vw - 32px);
- 
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
@@ -174,7 +173,6 @@ footer {
 
     header, header.light {
         border-bottom: none; 
-        position: absolute; 
         flex-direction: column;
         align-items: flex-start;
         background-color: transparent; 
@@ -191,7 +189,7 @@ footer {
         }
 
     footer {
-        position: absolute; 
+        position: sticky; 
         bottom: 0px; 
     }
 
@@ -201,7 +199,7 @@ footer {
 
     }
 
-    #content {
+    .content {
         margin-top: 0px; 
     }
 
