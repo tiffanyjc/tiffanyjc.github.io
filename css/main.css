@@ -47,6 +47,7 @@ h2 {
 }
 
 header {
+    z-index: 999; 
     position: sticky;
     left: 0px; 
     top: 0px; 
@@ -58,13 +59,13 @@ header {
     align-items: center; 
 
     background-color: var(--dark-primary); 
-    border-bottom: 1px solid var(--light-primary); 
+    /* border-bottom: 1px solid var(--light-primary);  */
 
 }
 
 header.light {
     background-color: var(--light-primary); 
-    border-bottom: 1px solid var(--dark-primary); 
+    /* border-bottom: 1px solid var(--dark-primary);  */
 }
 
 hr {
