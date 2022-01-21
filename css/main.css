@@ -48,7 +48,7 @@ h2 {
 
 header {
     z-index: 999; 
-    position: sticky;
+    position: fixed;
     left: 0px; 
     top: 0px; 
     width: calc(100vw - 32px);
@@ -153,6 +153,7 @@ header a:focus, #social a:focus, .content a:focus {
     }
 
 footer {
+    position: fixed; 
     width: calc(100vw - 32px);
     display: flex; 
     flex-direction: row;
@@ -188,10 +189,12 @@ footer {
         #settings {
             flex-direction: column;
             align-items: flex-start;
+            font-size: 10px; 
+            line-height: 13px; 
         }
 
     footer {
-        position: sticky; 
+        position: fixed; 
         bottom: 0px; 
     }
 
@@ -225,5 +228,17 @@ footer {
     hr {
         display: none;
     }
+
+}
+
+#custom-art {
+    width: 75vw; 
+    display: flex; 
+    flex-direction: row;
+    padding-bottom: 32px; 
+}
+
+#custom-art div {
+    padding: 0 28px; 
 
 }

@@ -7,6 +7,8 @@
     width: 75vw; 
     max-width: none; 
     z-index: 998; 
+    position: absolute; 
+    top: 0px; 
 }
 
 .image-gallery img:hover {
@@ -96,5 +98,13 @@
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+
+    header {
+      flex-direction: column;
+    }
+    
+    #settings {
+      display: none; 
     }
   }
