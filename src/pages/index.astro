@@ -5,20 +5,10 @@ import Card from '../components/Card.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import Label from '../components/Label.astro'
 import SkillLayout from '../components/SkillLayout.astro'
-import PostPreview from '@/components/blog/PostPreview.astro'
-
-import { Image } from 'astro:assets'
-import astro from '../assets/headshot.jpeg'
-
-import { getAllPosts, sortMDByDate } from '@/utils'
 
 const speaking = ['Rewrite the Code', 'IBM Accessibility', 'Seattle Design Festival', 'University of Maryland', 'Seattle University', 'Emily Carr University', 'Brown University']
 const illustrating = ['Citibank Lunar New Year 2023', 'Wing Luke Museum', 'National Parks Service', 'The Emotional Abuse Discussion', 'Columbia U: Trailblazer Heroes']
 const hobbies = ['Drawing', 'Climbing', 'Baking shokupan', 'Messing with my cat']
-
-const MAX_POSTS = 10
-const allPosts = await getAllPosts()
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 ---
 
 <PageLayout meta={{ title: 'Design' }}>
