@@ -1,0 +1,135 @@
+---
+import PageLayout from '../../layouts/BaseLayout.astro'
+import Section from '../../components/Section.astro'
+import Card from '../../components/Card.astro'
+import BookCard from '../../components/BookCard.astro'
+import Gallery from '../../components/Gallery.astro'
+import ProjectCard from '@/components/ProjectCard.astro'
+---
+
+
+<PageLayout meta={{ title: 'Art' }}>
+	<div class='flex w-full flex-col gap-y-10'>
+
+		<!-- // ABOUT SECTION -->
+		<Section title='About'>
+			<p class='text-muted-foreground'>
+				Hello! I'm a Taiwanese American artist living in Seattle. I'm primarily a digital artist, although my practice extends to other mediums including block printing, clay, and traditional painting. My creative inspiration comes from the great outdoors as well as my Taiwanese roots, and I particularly love drawing scenes that play with light and shadow, nature, animals, female heroines going on an adventure.  
+			</p>
+		</Section>
+
+		<Section title='Contact'>
+			<p class='text-muted-foreground'>
+				<b>General inquiries + commercial projects:</b> <u>totiffanychen@gmail.com</u>
+			</p>
+			<p class='text-muted-foreground'>
+				<b>Publishing inquiries:</b> <a href="https://www.andreabrownlit.com/Team/Jemiscoe-Chambers-Black"><u>Jemiscoe Chambers-Black</u></a> at <a href="https://www.andreabrownlit.com/"><u>Andrea Brown Literary Agency</u></a>.
+			</p>
+			<p class="text-muted-foreground">
+				<b>Social:</b> 
+				<a class="text-gray-500 tracking-wide font-normal underline" href="https://www.instagram.com/tiffanychenart">Instagram</a> | 
+				<a class="text-gray-500 tracking-wide font-normal underline" href="https://www.etsy.com/shop/tiffanychenart">Etsy</a> | 
+				<a class="text-gray-500 tracking-wide font-normal underline" href="https://twitter.com/tiffanychenart">Twitter</a>
+				<br />&nbsp; 
+			</p>
+		</Section>
+
+		<hr></hr>
+
+		<h2 class='text-xl font-semibold md:w-1/3'>Books</h2>
+		<div class="flex flex-row justify-between gap-4 flex-wrap">
+			<BookCard
+			heading='The Moon Lantern'
+			subheading='Ha Dinh, Tiffany Chen'
+			date='Spring &apos;25'
+			imagePath='/src/assets/wipBook.png'
+			altText='Lorem, ipsum dolor sit' />
+	
+			<BookCard
+			heading='Suka&apos;s Farm'
+			subheading='Ginger Park, Frances Park, Tiffany Chen'
+			date='Spring &apos;25'
+			imagePath='/src/assets/sukaFarm.png'
+				altText='Lorem, ipsum dolor sit'
+				href="https://www.barnesandnoble.com/w/sukas-farm-ginger-park/1144764046"
+			/>
+
+			<BookCard
+			heading='My Luck Charm'
+				subheading='Sheri Mabry, Tiffany Chen &nbsp;'
+				date='Spring &apos;24'
+				imagePath='/src/assets/luckCharm.jpeg'
+			altText='Lorem, ipsum dolor sit'
+			href="https://www.barnesandnoble.com/w/my-luck-charm-sheri-mabry/1143852756" />
+	
+			<BookCard
+			heading='Meowl-o-ween'
+			subheading='Diane Muldrow, Tiffany Chen'
+			date='Fall &apos;23'
+			imagePath='/src/assets/meowloween.jpeg'
+				altText='Lorem, ipsum dolor sit'
+				href="https://www.barnesandnoble.com/w/meowloween-diane-muldrow/1142804269"
+			/>
+		</div>
+
+		<hr></hr>
+
+		<h2 class='text-xl font-semibold md:w-1/3'>Commercial projects</h2>
+
+		<div class="flex flex-row justify-between gap-4 flex-wrap">
+				<ProjectCard
+				href='https://www.linkedin.com/posts/tiffanyjchen_i-usually-keep-my-illustration-stuff-separate-activity-6891515073391661056-CTS2'
+				heading='National Parks Service'
+				subheading='Coming soon!'
+				imagePath='/src/assets/wipProject.png'
+				altText='Example'
+				class='w-96 md:w-48 sm:w-1/2'
+			/>
+			<ProjectCard
+				href='https://www.linkedin.com/posts/tiffanyjchen_i-usually-keep-my-illustration-stuff-separate-activity-6891515073391661056-CTS2'
+				heading='Citibank'
+				subheading='Created an augmented reality photobooth experience that was used by Citibank clients in NYC and Los Angeles during Lunar New Year.'
+				imagePath='/src/assets/artProj_citibank1.png'
+				altText='Example'
+				class='w-96 md:w-48 sm:w-1/2'
+			/>
+			<ProjectCard
+				href='https://www.linkedin.com/posts/tiffanyjchen_i-usually-keep-my-illustration-stuff-separate-activity-6891515073391661056-CTS2'
+				heading='Citibank'
+				subheading='Designed a 24K gold rabbit figurine that joyfully embraces the good tidings the Year of the Rabbit for valued customers.'
+				imagePath='/src/assets/artProj_citibank0.png'
+				altText='Example'
+				class='w-96 md:w-48 sm:w-1/2'
+			/>
+			<ProjectCard
+			href='https://www.linkedin.com/posts/tiffanyjchen_i-usually-keep-my-illustration-stuff-separate-activity-6891515073391661056-CTS2'
+			heading='The Emotional Abuse Discussion'
+			subheading='Illustrated a 5x8&apos; banner for the nonprofit Team The Emotional Abuse Discussion&apos;s awareness event in downtown Redmond.'
+			imagePath='/src/assets/artProj_tead.png'
+			altText='Example'
+			class='w-96 md:w-48 sm:w-1/2'
+		/>
+		</div>
+
+	
+
+		<hr></hr>
+		
+		<!-- // GALLERY SECTION  -->
+		<div class='mt-5 flex w-full flex-col gap-y-10'>
+			<h2 class='text-xl font-semibold md:w-1/3'>Gallery</h2>
+		
+			<Gallery />
+			
+			<p class="text-center text-l font-semibold bg-gray-100 rounded-lg">
+				<br />
+				Find more of my work at @tiffanychenart:<br />
+				<a class="text-gray-500 tracking-wide font-normal underline" href="https://www.instagram.com/tiffanychenart">Instagram</a> | 
+				<a class="text-gray-500 tracking-wide font-normal underline" href="https://www.etsy.com/shop/tiffanychenart">Etsy</a> | 
+				<a class="text-gray-500 tracking-wide font-normal underline" href="https://twitter.com/tiffanychenart">Twitter</a>
+				<br />&nbsp; 
+			</p>
+
+		</div>
+	</div>
+</PageLayout>
